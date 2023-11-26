@@ -11,7 +11,7 @@
               class="heading-color ms-3"
                   href="#"
                   aria-label="Dr. Yaw Ackah Memorial School"
-                  >Dr. Yaw Ackah Memorial School</a
+                  >SDA Senior High School Bekwai</a
                 >
               </h6>
             </div>

@@ -523,7 +523,7 @@ function printStudent_payment_receipt() {
               </style>
           </head>
           <body>
-                <h3 style="margin-bottom: 1px;">Dr. Yaw Ackah Memorial School</h3>
+                <h3 style="margin-bottom: 1px;">SDA Senior High School Bekwai</h3>
                 <h4 style="margin-top: 1px;">Payment Receipt</h4>
               <div class="receipt-info">
                   <strong>Payer:</strong> ${payer}<br>

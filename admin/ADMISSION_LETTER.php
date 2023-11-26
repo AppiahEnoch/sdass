@@ -94,7 +94,7 @@ $pdf->Ln(10);
 $pdf->SetFont('Arial', '', 10);
 $recdate=$result = \AE\AE::aeDate($data['recdate']);
 
-$pdf->MultiCell(0, 10, "We're thrilled to welcome " . $data['first_name'] . ' ' . $data['last_name'] . " to the Dr. Yaw Ackah Memorial School today (" . $recdate . "). Here are the admission details: Admission Number: " . $data['admission_number'] . " and Class: " . $data['class_name'] . ". We have attached essential information on fees and our academic calendar. Please take a moment to go through them. Should you have any questions, don't hesitate to reach out at " . $school_contact . " or " . $school_email . ". Thank you for entrusting us with " . $data['first_name'] . "'s education. We can't wait to embark on this academic journey together!", 0);
+$pdf->MultiCell(0, 10, "We're thrilled to welcome " . $data['first_name'] . ' ' . $data['last_name'] . " to the SDA Senior High School Bekwai today (" . $recdate . "). Here are the admission details: Admission Number: " . $data['admission_number'] . " and Class: " . $data['class_name'] . ". We have attached essential information on fees and our academic calendar. Please take a moment to go through them. Should you have any questions, don't hesitate to reach out at " . $school_contact . " or " . $school_email . ". Thank you for entrusting us with " . $data['first_name'] . "'s education. We can't wait to embark on this academic journey together!", 0);
 
 $pdf->Ln(20);
 

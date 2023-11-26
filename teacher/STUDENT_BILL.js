@@ -454,7 +454,7 @@ function printAllCards() {
         </style>
     `;
 
-    let headingText = "Dr. Yaw Ackah Memorial School";
+    let headingText = "SDA Senior High School Bekwai";
 
     let printContent = '';
     let cards = document.querySelectorAll('.class_bill_card');
