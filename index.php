@@ -9,7 +9,7 @@ include "./session/SESSION_CLR.php";
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SDASS</title>
+    <title>SDA Senior High School Bekwai</title>
     <link  rel="icon" type="image/png" href="./devimage/logo.png"/>
 
  
