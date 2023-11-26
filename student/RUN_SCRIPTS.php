@@ -13,12 +13,20 @@ include "FILL_ADMISSION_LETTER.php";
 
 $admission_number = $_SESSION['index_number'] ?? '';
 
+try {
+    $command1 = "python DOCX_PDF_admissionForm.py $admission_number &";
+    exec($command1);
+} catch (Exception $e) {
+    // Handle the error
+    echo "Error executing admission form script: " . $e->getMessage();
+}
 
-$command1 = "python DOCX_PDF_admissionForm.py $admission_number &";
-$command2 = "python DOCX_PDF_admissionLetter.py $admission_number &";
-
-exec($command1);
-exec($command2);
-
+try {
+    $command2 = "python DOCX_PDF_admissionLetter.py $admission_number &";
+    exec($command2);
+} catch (Exception $e) {
+    // Handle the error
+    echo "Error executing admission letter script: " . $e->getMessage();
+}
 
 echo $admission_number;

@@ -29,9 +29,7 @@
     <link rel="stylesheet" href="./style2.css?
     <?php echo filemtime("./style2.css"); ?>
     " />
-    <link rel="stylesheet" href="./carousel.css?
-    <?php echo filemtime("./carousel.css"); ?>
-    " />
+
 
     <link rel="stylesheet" href="../aeT.css?
     <?php echo filemtime("../aeT.css"); ?>
@@ -52,13 +50,9 @@
     <link rel="stylesheet" href="./TEACHER.css?
     <?php echo filemtime("./TEACHER.css"); ?>
     " />
-    <link rel="stylesheet" href="./STUDENT.css?
-    <?php echo filemtime("./STUDENT.css"); ?>
-    " />
+ 
    
-    <link rel="stylesheet" href="./BLOCK.css?
-    <?php echo filemtime("./BLOCK.css"); ?>
-    " />
+
 
     <link rel="stylesheet" href="./RESET_USER.css?
     <?php echo filemtime("./RESET_USER.css"); ?>

@@ -106,6 +106,7 @@ function run_scripts(){
     url: "RUN_SCRIPTS.php",
     dataType: "text",
     success: function(data, status) {
+      console.log("admi_path:"+data);
     
       global_form_path="../PDF_FORMS/FORM_"+data+".pdf";
       global_letter_path="../PDF_LETTERS/ADM_"+data+".pdf";

@@ -238,6 +238,7 @@ if ($result4->num_rows > 0) {
         $_SESSION['admission_number'] = $row4['admission_number'];
         $log_id= $row4['admission_number'];
         $_SESSION['index_number'] = $row4['admission_number'];
+        $_SESSION['admission_number'] = $row4['admission_number'];
         // user_id
         $_SESSION['user_id'] = $row4['id'];
     
@@ -283,6 +284,7 @@ if ($isStudent == false) {
                 $isStudent=true;
                 $_SESSION['admission_number'] = $row5['index_number'];
                 $log_id= $row5['index_number'];
+           
                 // user_id
                 $_SESSION['user_id'] = $row5['id'];
                 break; // Exit the loop if a match is found
