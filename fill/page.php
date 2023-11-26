@@ -17,9 +17,6 @@
     />
 
 
-    <link rel="stylesheet" href="./ae.css?
-    <?php echo filemtime("./ae.css"); ?>
-    " />
     <link rel="stylesheet" href="./style1.css?
     <?php echo filemtime("./style1.css"); ?>
     " />
