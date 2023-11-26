@@ -1,0 +1,22 @@
+@media (max-width: 576px) {
+  .custom-form {
+    top: 10rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+#mobileError {
+  font-family: "Helvetica", "Arial", sans-serif;
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+#mobileError:before {
+  content: "\f071";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 8px;
+}/*# sourceMappingURL=registration.css.map */

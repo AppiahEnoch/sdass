@@ -1,0 +1,241 @@
+// Root styles
+html {
+  background-color: gray;
+  background: url("../devimage/bg1.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+
+}
+
+
+
+// Container with transparency
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); // Center the container
+  width: 20rem;
+  border: solid 1px #333;
+
+  border-radius: 5px;
+  background: rgba(3, 3, 3, 0.25);
+  box-shadow: 1px 1px 50px #000;
+  // on lg screen 
+  @media (min-width: 992px) {
+    width: 30rem;
+
+
+  }
+
+}
+
+
+
+
+
+// Select input styles
+
+
+// Input focus styles
+input:focus {
+  outline: none;
+  box-shadow: 3px 3px 10px #333;
+  background: rgba(3, 3, 3, 0.18);
+}
+
+// Placeholder styles
+::placeholder {
+  color: #ddd;
+  opacity: 0.6;
+}
+
+// Button hover effect
+button:hover {
+  opacity: 0.7;
+}
+
+// Label styles
+.form-label {
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  display: block;
+  opacity: 0.8;
+}
+
+// Form control styles 
+.form-control {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background: whitesmoke;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:focus {
+    background-color: transparent;
+    color: white;
+  }
+
+  &:not(:focus) {
+    background-color: transparent;
+    border: solid 0.1px gray;
+  }
+
+  &::placeholder {
+    color: #ddd;
+    opacity: 0.6;
+  }
+}
+
+
+.form-title{
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  display: block;
+  opacity: 0.8;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+
+.form-select{
+  text-decoration: none;
+  width: 100%;
+  margin: 9px auto;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:focus {
+    background-color: rgb(47, 45, 45);
+    color: white;
+  }
+
+  &:not(:focus) {
+    background-color: transparent;
+    border: solid 1px gray;
+  }
+
+  &::placeholder {
+    color: #ddd;
+    opacity: 0.6;
+  }
+}
+
+.btn-primary {
+  background-color: transparent;
+  border-color:#1CAC78;
+  color: #fff;
+
+
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #4F7942;
+    border-color:#4F7942;
+    color: #fff;
+  }
+}
+
+.btn-secondary {
+  background-color: rgb(29, 26, 26);
+  border-color:#282b2a;
+  color: #fff;
+
+  &:hover {
+    background-color: transparent;
+    border-color:#4F7942;
+    color: #fff;
+  }
+}
+
+
+input[type],
+input[type="file"],
+textarea,
+select {
+  &:hover, &:focus {
+
+    outline:  blueviolet solid 1px !important;
+    box-shadow: none !important;
+  }
+}
+
+
+
+input[type="date"]{
+  width: 100%;
+
+
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    height: 40px;
+
+    // not focused
+    &:not(:focus) {
+      background-color: transparent;
+      border: solid 1px gray;
+    }
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+ 
+}
+
+
+
+.ae-pledge {
+
+
+  label {
+    display: block; // Ensures the label takes the full width of the container
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Professional font family
+    font-size: 1rem; // Appropriate font size for readability
+    line-height: 1.5; // Line height for better text flow
+    color: #212529; // Dark color for contrast and readability
+
+    #stuname {
+      font-weight: bold; // Bold for the student name to stand out
+      color:#DADD98;
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+
+    &:not(#lbwarning) {
+      border: solid 1px #ced4da; // Border for all labels except the warning label
+      color: #f2f2f2;
+      
+
+    }
+
+    #lbwarning {
+      // Styles for the warning label
+      font-style: italic; // Italicized font for the warning text
+      color: #dc3545; // Color to indicate caution
+      font-size: 0.9rem; // Slightly smaller font size for the warning label
+    }
+  }
+}

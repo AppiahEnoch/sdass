@@ -1,0 +1,199 @@
+#wrapper5 .custom-form, #wrapper5 .table_wrapper, #wrapper6 .custom-form, #wrapper6 .table_wrapper {
+  min-width: 100%;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  position: relative;
+}
+#wrapper5 .custom-form .form-label, #wrapper5 .table_wrapper .form-label, #wrapper6 .custom-form .form-label, #wrapper6 .table_wrapper .form-label {
+  margin-bottom: 0rem;
+  font-family: sans-serif;
+  font-size: small;
+}
+@media (min-width: 768px) {
+  #wrapper5 .custom-form, #wrapper5 .table_wrapper, #wrapper6 .custom-form, #wrapper6 .table_wrapper {
+    min-width: 45rem;
+  }
+}
+#wrapper5 .custom-form #payee-list, #wrapper5 .table_wrapper #payee-list, #wrapper6 .custom-form #payee-list, #wrapper6 .table_wrapper #payee-list {
+  position: absolute;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  top: 10;
+  z-index: 10;
+  width: 80%;
+}
+#wrapper5 .custom-form #payee-list #payee-suggestion .list-group-item, #wrapper5 .table_wrapper #payee-list #payee-suggestion .list-group-item, #wrapper6 .custom-form #payee-list #payee-suggestion .list-group-item, #wrapper6 .table_wrapper #payee-list #payee-suggestion .list-group-item {
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+#wrapper5 .custom-form #payee-list #payee-suggestion .list-group-item:first-child, #wrapper5 .table_wrapper #payee-list #payee-suggestion .list-group-item:first-child, #wrapper6 .custom-form #payee-list #payee-suggestion .list-group-item:first-child, #wrapper6 .table_wrapper #payee-list #payee-suggestion .list-group-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#wrapper5 .custom-form #payee-list #payee-suggestion .list-group-item:last-child, #wrapper5 .table_wrapper #payee-list #payee-suggestion .list-group-item:last-child, #wrapper6 .custom-form #payee-list #payee-suggestion .list-group-item:last-child, #wrapper6 .table_wrapper #payee-list #payee-suggestion .list-group-item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#wrapper5 .custom-form #payee-list #payee-suggestion .list-group-item:hover, #wrapper5 .table_wrapper #payee-list #payee-suggestion .list-group-item:hover, #wrapper6 .custom-form #payee-list #payee-suggestion .list-group-item:hover, #wrapper6 .table_wrapper #payee-list #payee-suggestion .list-group-item:hover {
+  background-color: rgb(151, 117, 237);
+  color: #fff;
+}
+#wrapper5 input[type]:hover, #wrapper5 input[type]:focus,
+#wrapper5 input[type=file]:hover,
+#wrapper5 input[type=file]:focus, #wrapper5 button:hover, #wrapper5 button:focus,
+#wrapper5 textarea:hover,
+#wrapper5 textarea:focus,
+#wrapper5 select:hover,
+#wrapper5 select:focus, #wrapper6 input[type]:hover, #wrapper6 input[type]:focus,
+#wrapper6 input[type=file]:hover,
+#wrapper6 input[type=file]:focus, #wrapper6 button:hover, #wrapper6 button:focus,
+#wrapper6 textarea:hover,
+#wrapper6 textarea:focus,
+#wrapper6 select:hover,
+#wrapper6 select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.aeSubmit-buttons .btn {
+  transition: all 0.3s ease-in-out;
+}
+.aeSubmit-buttons .btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.aeSubmit-buttons .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+.filter-card {
+  position: absolute;
+  width: 25rem;
+  top: 10;
+  z-index: 10;
+  padding: 1rem 2rem;
+  background-color: #f8f9fa;
+  border: 4px solid #06233d;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.filter-card h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.filter-card .mb-3 {
+  margin-bottom: 1rem !important;
+}
+.filter-card .mb-3 label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.filter-card .mb-3 .input-group .form-control,
+.filter-card .mb-3 .input-group select.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+.filter-card .mb-3 .input-group .input-group-text {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  border-radius: 5px;
+}
+.filter-card .mb-3 .input-group .input-group-text i.fas {
+  color: #495057;
+}
+.filter-card .mb-3 button {
+  font-weight: 600;
+  border-radius: 5px;
+}
+.filter-card .mb-3 button:hover {
+  filter: brightness(90%);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: solid 1px blue;
+  color: black;
+}
+.btn-secondary:hover {
+  background-color: rgb(230, 223, 236);
+  color: black;
+}
+
+.del-icon {
+  color: red;
+}
+.del-icon:hover {
+  color: rgb(230, 223, 236);
+}
+
+#class_bill_card_grand_total .card-header {
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e0e0e0;
+}
+#class_bill_card_grand_total .card-header h5 {
+  margin: 0;
+  font-weight: bold;
+}
+#class_bill_card_grand_total .card-body {
+  padding: 1em;
+}
+#class_bill_card_grand_total .card-body #grand_total_amount {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+.class_bill_Class_total-row {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+.class_bill_Class_total-row td {
+  padding: 0.5em 1em;
+  border-top: 1px solid #e0e0e0;
+}
+.class_bill_Class_total-row td:first-child {
+  color: #333;
+}
+.class_bill_Class_total-row td:last-child {
+  color: #007bff;
+}
+
+.class_bill_card {
+  border: 1px solid #420cf1;
+  border-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.card-header {
+  color: #007bff;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #c9c9c9, 3px 3px 0 #bbb, 4px 4px 0 #b9b9b9, 5px 5px 0 #aaa, 6px 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15);
+}
+
+#grand_total_amount {
+  color: red !important;
+}
+
+.class_bill_print_icon {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.class_bill_print_icon:hover {
+  filter: brightness(90%);
+  transform: scale(1.2);
+  z-index: 100;
+}
+
+.card.class_bill_card .table th:nth-child(1), .card.class_bill_card .table td:nth-child(1) {
+  width: 75%;
+}
+.card.class_bill_card .table th:nth-child(2), .card.class_bill_card .table td:nth-child(2) {
+  width: 20%;
+}
+.card.class_bill_card .table th:nth-child(3), .card.class_bill_card .table td:nth-child(3) {
+  width: 5%;
+}/*# sourceMappingURL=STUDENT_BILL.css.map */

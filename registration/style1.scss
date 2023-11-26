@@ -1,0 +1,198 @@
+$bg-color: #541ea5;
+$hover-color: #FFC712;
+$text-color: white;
+$dropdown-bg:#fffdd0;
+
+$heading-color:#fffdd0;
+
+$all-link-color:#eee8e8;
+
+
+  
+
+html, body {
+  background-color: $text-color;
+}
+
+.bg-color{
+    background-color: $bg-color;
+    color: $text-color;
+    background-image: url('../devimage/11.jpg');  /* Replace with your image path */
+    background-size: cover;  /* Cover the entire element */
+    background-repeat: no-repeat;  /* Do not repeat the image */
+    background-position: center;  
+
+
+}
+
+.buttom-border{
+    border-bottom: 0px solid $bg-color; /* This will create a 2-pixel thick, solid, black border at the bottom of the element */
+}
+
+.heading-color{
+    color: $heading-color;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    
+    
+}
+
+.link-icon{
+    color: $dropdown-bg;
+    text-decoration: none;
+    padding-right: 1rem;
+
+    &:hover{
+        color: yellow;
+        text-decoration: underline;
+    }
+}
+
+.logo {
+  width: 12rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+
+
+.dropdown-bg{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 2rem;
+   
+
+    ul,li,a{
+        color: $all-link-color;
+        background-color: transparent;
+
+
+      
+    }
+
+
+    
+}
+@media (max-width: 768px) {
+    #navbarNavDropdown .nav-item a[href="login/login.php"] {
+      display: none;
+    }
+  }
+
+
+  .hambergerColor1 {
+    background-color: transparent; // Or any color that makes it visible against your background
+    border: none;
+    color: #f2f2f2; // You can specify a color to ensure it's visible
+    
+    &:focus,
+    &:active {
+      background-color: #f4f4f5;
+      border: none;
+      color: white; // You can specify a focus color to ensure it's visible
+    }
+  
+    &:hover {
+      border: 2px solid #00ff00; // Green border
+      color: $dropdown-bg; // You can specify a focus color to ensure it's visible
+      box-shadow: 0 0 10px 3px #00ff00; // Green glow
+ 
+    }
+  }
+  
+
+
+  
+  .hambergerColor2{
+    background-color:#454c86; // Or any color that makes it visible against your background
+    border: none;
+    color: wheat; // You can specify a color to ensure it's visible
+  
+    &:focus,
+    &:active {
+
+      border: none;
+      color: white; // You can specify a focus color to ensure it's visible
+    }
+
+    &:hover{
+        background-color: #c5c5cf;
+        border: none;
+        color: white; // You can specify a focus color to ensure it's visible
+    }
+    
+  }
+
+
+
+
+  .nav-link{
+    color: $all-link-color;
+    text-decoration: none;
+    padding-right: 1rem;
+    &:hover{
+        color: $dropdown-bg;
+        text-decoration: none;
+    }
+
+
+    
+      &:focus {
+        color: $all-link-color; // Replace with the color you want after click
+
+        outline: none; // Remove default focus outline, optional
+      }
+  }
+  
+
+  #login2{
+    color: $dropdown-bg;
+    font-weight: bolder;
+
+
+}
+
+
+
+#userProfilePic{
+  width: 2rem;
+  border-radius: 50%;
+  border-color: #f2f2f2;
+  border-width: 1px;
+  border-style: solid;
+
+}
+
+.headingLabel{
+  color: $heading-color;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+
+.userProfile{
+  &:hover{
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

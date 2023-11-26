@@ -1,0 +1,52 @@
+#class_list_table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  line-height: 1.5;
+  font-family: "Arial", sans-serif;
+}
+#class_list_table thead {
+  background-color: #aa86f7;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+#class_list_table th, #class_list_table td {
+  padding: 12px 15px;
+}
+#class_list_table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+#class_list_table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+#class_list_table tbody tr:last-of-type {
+  border-bottom: 2px solid #6c68e3;
+}
+#class_list_table tbody tr td img {
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+  max-width: 50px;
+  max-height: 50px;
+}
+#class_list_table tbody tr td img:hover {
+  transform: scale(1.1);
+}
+#class_list_table th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+i.fa.fa-download {
+  font-size: 24px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+i.fa.fa-download:hover {
+  color: #007bff;
+  transform: scale(1.2);
+}/*# sourceMappingURL=CLASS_LIST.css.map */

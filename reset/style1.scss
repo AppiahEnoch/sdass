@@ -1,0 +1,61 @@
+
+
+
+// Variables
+$html-bg-color: #843971;
+$body-bg-color: #843971;
+$card-bg-color: lighten($html-bg-color, 10%);
+$btn-color: darken($html-bg-color, 15%);
+$input-focus-border-color: darken($html-bg-color, 20%);
+$hover-color: lighten($html-bg-color, 20%);
+
+$link-color:#f2f2f2;
+
+$hover-color:#E8D28A;
+
+// Basic Style
+html, body {
+  height: 100%;
+  background: linear-gradient(45deg, $html-bg-color, $body-bg-color);
+  font-family: 'Arial', sans-serif;
+}
+.buttom-border{
+    border-bottom: 1px solid $bg-color; /* This will create a 2-pixel thick, solid, black border at the bottom of the element */
+}
+
+.heading-color{
+    color:$html-bg-color;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.link-icon{
+    color: $dropdown-bg;
+    text-decoration: none;
+    padding-right: 1rem;
+
+    &:hover{
+        color: yellow;
+    }
+}
+
+.logo {
+  width: 12rem;
+}
+
+.bg-color{
+    background-color: #8C003B;
+}
+
+.dropdown-bg{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 2rem;
+    background-color: $dropdown-bg;
+
+    a{
+        color: white;
+    }
+}
+

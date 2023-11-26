@@ -1,0 +1,45 @@
+.append_teacher_card {
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      border-radius: 0.5rem; // Adds rounded corners to the card
+      margin-bottom: 2rem; // Spacing between cards
+  
+      &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+  
+      img.card-img-top {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; // Makes the image round
+        margin-top: 1rem;
+        object-fit: cover; // Ensures the image covers the area, might cut off some parts
+        border: 3px solid #dee2e6; // Gives the image a border
+      }
+  
+      .card-body {
+        text-align: center; // Centers the content in the card body
+  
+        .card-title {
+          color: #007bff; // Bootstrap primary color for the title
+          font-weight: 600; // Makes the title bold
+          margin-bottom: 0.5rem; // Spacing between title and content
+        }
+  
+        .card-text {
+          margin-bottom: 0.25rem; // Reduces the bottom margin of the paragraph
+  
+          span {
+            font-weight: bold; // Makes the span content bold
+            color: #495057; // Darker text for better readability
+          }
+        }
+  
+        .card-text:last-child {
+          margin-bottom: 0; // Removes bottom margin from the last paragraph
+        }
+      }
+    }
+  }
+  

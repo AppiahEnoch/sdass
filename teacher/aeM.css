@@ -1,0 +1,48 @@
+#userDetailsModal .modal-dialog.modal-dialog-centered {
+  max-width: 20rem;
+  width: auto;
+  margin: auto;
+}
+#userDetailsModal .modal-content {
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+#userDetailsModal .modal-header {
+  background-color: #f2f2f2;
+}
+#userDetailsModal .modal-header h5 {
+  color: #333;
+}
+#userDetailsModal .modal-body {
+  background-color: #fff;
+}
+#userDetailsModal .modal-body #userImage {
+  width: 15rem;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+#userDetailsModal .modal-body #userImage:hover {
+  transform: scale(1.1);
+}
+#userDetailsModal .modal-body h6, #userDetailsModal .modal-body p {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+#userDetailsModal .modal-footer {
+  background-color: #f2f2f2;
+}
+#userDetailsModal .modal-footer #btnClose {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+#userDetailsModal .modal-footer #btnClose:hover {
+  background-color: #0056b3;
+}/*# sourceMappingURL=aeM.css.map */

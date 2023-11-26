@@ -1,0 +1,290 @@
+#wrapper9 .custom-form {
+  max-width: 50rem;
+  min-width: 100%;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  position: relative;
+}
+#wrapper9 .custom-form .form-label {
+  margin-bottom: 0rem;
+  font-family: sans-serif;
+  font-size: small;
+}
+@media (min-width: 768px) {
+  #wrapper9 .custom-form {
+    min-width: 45rem;
+  }
+}
+#wrapper9 .custom-form #payee-list {
+  position: absolute;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  top: 10;
+  z-index: 10;
+  width: 80%;
+}
+#wrapper9 .custom-form #payee-list #payee-suggestion .list-group-item {
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+#wrapper9 .custom-form #payee-list #payee-suggestion .list-group-item:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#wrapper9 .custom-form #payee-list #payee-suggestion .list-group-item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#wrapper9 .custom-form #payee-list #payee-suggestion .list-group-item:hover {
+  background-color: rgb(151, 117, 237);
+  color: #fff;
+}
+#wrapper9 input[type]:hover, #wrapper9 input[type]:focus,
+#wrapper9 input[type=file]:hover,
+#wrapper9 input[type=file]:focus, #wrapper9 button:hover, #wrapper9 button:focus,
+#wrapper9 textarea:hover,
+#wrapper9 textarea:focus,
+#wrapper9 select:hover,
+#wrapper9 select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.aeSubmit-buttons .btn {
+  transition: all 0.3s ease-in-out;
+}
+.aeSubmit-buttons .btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.aeSubmit-buttons .btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+.aeSubmit-buttons #fee_cancel {
+  background-color: transparent;
+  border: solid 1px blue;
+  color: black;
+}
+.aeSubmit-buttons #fee_cancel:hover {
+  background-color: rgb(230, 223, 236);
+}
+
+.filter-card {
+  position: absolute;
+  width: 25rem;
+  top: 10;
+  z-index: 10;
+  padding: 1rem 2rem;
+  background-color: #f8f9fa;
+  border: 4px solid #06233d;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.filter-card h6 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.filter-card .mb-3 {
+  margin-bottom: 1rem !important;
+}
+.filter-card .mb-3 label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.filter-card .mb-3 .input-group .form-control,
+.filter-card .mb-3 .input-group select.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+.filter-card .mb-3 .input-group .input-group-text {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  border-radius: 5px;
+}
+.filter-card .mb-3 .input-group .input-group-text i.fas {
+  color: #495057;
+}
+.filter-card .mb-3 button {
+  font-weight: 600;
+  border-radius: 5px;
+}
+.filter-card .mb-3 button:hover {
+  filter: brightness(90%);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: solid 1px blue;
+  color: black;
+}
+.btn-secondary:hover {
+  background-color: rgb(230, 223, 236);
+  color: black;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+td:focus {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+i.fa.fa-trash.delete-assessment {
+  float: right;
+  font-size: 18px;
+  color: #9E9E9E;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+i.fa.fa-trash.delete-assessment:hover {
+  color: #F44336;
+  transform: scale(1.2);
+  box-shadow: 0 3px 6px rgba(244, 67, 54, 0.3);
+}
+
+#print_all_teacher_assessment_cards.fa.fa-print.fa-2x {
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#print_all_teacher_assessment_cards.fa.fa-print.fa-2x:hover {
+  color: #3498db;
+  transform: scale(1.2);
+  box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
+}
+
+@media print {
+  .print_m3 {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+  }
+}
+
+#student_interest_table_body td:nth-child(1),
+#student_attitude_table_body td:nth-child(1),
+#student_remarks_table_body td:nth-child(1) {
+  width: 20%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+#student_interest_table_body td:nth-child(2),
+#student_attitude_table_body td:nth-child(2),
+#student_remarks_table_body td:nth-child(2) {
+  width: 30%;
+}
+
+#lb_save_interest_changes, #lb_save_interest_changes2 {
+  z-index: 100;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+#lb_save_interest_changes:hover, #lb_save_interest_changes2:hover {
+  color: #007BFF;
+}
+#lb_save_interest_changes #teacher_update_comments_manually, #lb_save_interest_changes #teacher_update_comments_manually2, #lb_save_interest_changes2 #teacher_update_comments_manually, #lb_save_interest_changes2 #teacher_update_comments_manually2 {
+  z-index: 100;
+  margin-right: 8px;
+  font-size: 20px;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+#lb_save_interest_changes #teacher_update_comments_manually:hover, #lb_save_interest_changes #teacher_update_comments_manually2:hover, #lb_save_interest_changes2 #teacher_update_comments_manually:hover, #lb_save_interest_changes2 #teacher_update_comments_manually2:hover {
+  transform: scale(1.1);
+}
+#lb_save_interest_changes #teacher_update_comments_manually:active, #lb_save_interest_changes #teacher_update_comments_manually2:active, #lb_save_interest_changes2 #teacher_update_comments_manually:active, #lb_save_interest_changes2 #teacher_update_comments_manually2:active {
+  transform: scale(0.95);
+}
+
+#teacher_search_student_for_terminal_admission_list {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 20rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+#teacher_search_student_for_terminal_admission_list .list-group {
+  margin: 0;
+  overflow: scroll;
+  max-height: 20rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+}
+#teacher_search_student_for_terminal_admission_list .list-group .list-group-item {
+  padding: 12px 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+#teacher_search_student_for_terminal_admission_list .list-group .list-group-item:hover {
+  background-color: rgb(41, 29, 29);
+  color: #f2f2f2;
+  cursor: pointer;
+}
+#teacher_search_student_for_terminal_admission_list .list-group .list-group-item:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#class_student_attendance_list th:nth-child(1),
+#class_student_attendance_list td:nth-child(1) {
+  width: 20%;
+}
+
+#class_student_attendance_list th:nth-child(2),
+#class_student_attendance_list td:nth-child(2) {
+  width: 50%;
+}
+
+#class_student_attendance_list th:nth-child(3),
+#class_student_attendance_list td:nth-child(3),
+#class_student_attendance_list th:nth-child(4),
+#class_student_attendance_list td:nth-child(4) {
+  width: 15%;
+}
+
+a.d-inline-flex {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+a.d-inline-flex:hover {
+  background-color: #e6e6e6;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+a.d-inline-flex small {
+  color: #555;
+  font-weight: bold;
+}
+
+.save-icon {
+  font-size: 20px;
+  color: #ff66b3;
+  cursor: pointer;
+}
+.save-icon:hover {
+  color: #ff3385;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}/*# sourceMappingURL=AS1.css.map */

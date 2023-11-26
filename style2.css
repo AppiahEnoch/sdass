@@ -1,0 +1,6 @@
+/* For mobile screens */
+@media (max-width: 576px) {
+  #login2, #login1, #register {
+    max-width: 7rem;
+  }
+}/*# sourceMappingURL=style2.css.map */

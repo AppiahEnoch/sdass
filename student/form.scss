@@ -1,0 +1,160 @@
+#student_passport_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; // Make the wrapper circular
+    overflow: hidden; // Clip the image to fit the circular wrapper
+  
+    img.img-fluid {
+      border-radius: 50%; // Make the image circular
+      max-width: 200px; // Maximum width of 100px
+      height: auto;
+      margin: auto; // Keep the image centered
+    }
+  }
+
+
+  .card-body {
+    background-color: #f7f9fc; // A very subtle blue-grey background
+    border: 1px solid #e0e7ee; // A soft border
+    border-radius: 15px; // Rounded corners
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); // A very subtle shadow
+  
+    .list-group {
+      border-radius: 15px; // Rounded corners for the list group
+      overflow: hidden; // Required to ensure inner items don't break the rounded corners
+  
+      .list-group-item {
+        border: none; // Remove default borders
+        padding: 12px 20px; // More padding for each item
+        transition: background-color 0.3s ease; // Smooth transition for hover effect
+        &:hover {
+          background-color: #e6eef5; // Subtle hover effect
+        }
+  
+        &:not(:last-child) {
+          border-bottom: 1px solid #e0e7ee; // Add border only between items
+        }
+  
+        // Font adjustments for better readability
+        font-size: 0.9em;
+        color: #333;
+  
+        // Styles for the label (e.g., 'Admission Number:', 'Full Name:')
+        &:before {
+          content: attr(data-label); // Use a data attribute for label text
+          font-weight: bold; // Make the label bold
+          margin-right: 10px;
+          color: #555; // Slightly lighter color for label
+        }
+  
+        // Styles for the value (e.g., the actual admission number, full name, etc.)
+        span {
+          font-weight: normal; // Regular weight for content
+          color: #333; // Darker color for content
+        }
+      }
+    }
+  }
+  
+  #student_basic_portal_details {
+    .list-group-item {
+      // Making the label bold
+      font-weight: bold;
+  
+  
+      // Making the values normal
+      span {
+        font-weight: normal;
+     
+      }
+    }
+  }
+  
+
+  
+  @media (max-width: 576px) {
+    .list-group-item {
+      color: #007bff; /* Label color on small devices */
+    }
+    .list-group-item span {
+      display: block; /* Break onto the next line */
+      color: #28a745; /* Value color on small devices */
+    }
+  }
+
+  .download-image-icon {
+    display: block; // Ensures the image is centered if it has margin auto
+    margin: 0 auto; // Centers the image horizontally within its container
+    width: 50px; // Sets a fixed width for the image
+    height: auto; // Keeps the image's aspect ratio
+    cursor: pointer; // Changes the cursor to indicate it's clickable
+  
+    &:hover {
+      opacity: 0.8; // Slight transparency on hover for a feedback effect
+    }
+  
+    &:active {
+      opacity: 0.6; // More transparency when the image is clicked
+    }
+  }
+
+
+  .btn-primary {
+    background-color: #4A5D23;
+
+  
+    &:hover {
+      background-color: lighten(#03C03C, 5%); // Slightly lighter on hover for a feedback effect
+    }
+  
+    &:active {
+      background-color: darken(#03C03C, 5%); // Slightly darker to indicate the button is pressed
+      color: #fff; // Optional: Change the text color when active
+      outline: none; // Removes the blue outline
+      box-shadow: none; // Removes the shadow effect if any
+    }
+  
+    &:focus {
+      // If you want to customize the focus state as well
+      background-color: #03C03C;
+      outline: none; // Removes the blue outline
+      box-shadow: none; // Removes the shadow effect if any
+    }
+  }
+  
+  //   <div class="card-header d-doc">DOWNLOAD DOCUMENTS</div>
+  .d-doc {
+
+    color: #4A5D23;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+.edit-icon{
+  cursor: pointer;
+  color: #228B22;
+ 
+
+
+
+  .small-text{
+    font-size: 0.8rem;
+    color: #4A5D23;
+  }
+
+  // hover
+  &:hover {
+    opacity: 0.8; // Slight transparency on hover for a feedback effect
+    color: #0c1104;
+  }
+
+
+}
+
+
+

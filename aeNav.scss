@@ -1,0 +1,120 @@
+#home-nav{
+    .navbar {
+      background-color:transparent;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+      padding: 1rem 0; // Vertical padding for the navbar
+  
+      .navbar-brand {
+        .logo {
+          height: 50px; // Set a fixed height for consistency
+          width: auto; // Maintain aspect ratio
+        }
+      }
+  
+      .navbar-toggler {
+        background-color: wheat;
+        border: none;
+        &:focus {
+          box-shadow: none;
+        }
+  
+  
+      }
+
+  
+  
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: #007bff; // A shade of blue for links
+            transition: color 0.3s ease-in-out;
+  
+            &:hover,
+            &:focus {
+              color: #0056b3; // Darken the color on hover/focus
+            }
+  
+            i {
+              margin-right: 0.5rem; // Space between icon and text
+            }
+          }
+        }
+      }
+  
+      .dropdown-bg {
+        background-color: #f8f9fa; // Light background for dropdown
+      }
+  
+   
+  
+    }
+  
+    .fas,
+    .fa {
+      color: #f2f2f2; // Assuming this is the desired color, replace if different
+      cursor: pointer;
+  
+      &:hover {
+        color: white;
+      }
+    }
+
+    
+
+
+
+
+  
+.dropdown-bg{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 2rem;
+   
+
+    ul,li,a{
+        color: #f2f2f2;
+        background-color: transparent;
+
+
+        
+
+   
+    }
+}
+
+
+.ae-large-only{
+
+    color: #f2f2f2;
+
+}
+
+
+
+
+a:hover{
+    color: #f2f2f2;
+    background-color: transparent;
+    text-decoration: underline;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+  }
+  
+
+
+
+  #home-nav {
+    .navbar-toggler {
+        border-color:none !important; // Change the border color to green
+   
+      .navbar-toggler-icon {
+
+      
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(255, 255, 255, 1)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');
+        // You can adjust the stroke attribute in the SVG data URL to change the color
+      }
+    }
+  }
+  

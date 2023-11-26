@@ -1,0 +1,38 @@
+.custom-form {
+  max-width: 20rem;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  .custom-form {
+      width: calc(100% - 2rem);
+  }
+}
+
+
+input[type],
+input[type="file"],
+textarea,
+select {
+  &:hover, &:focus {
+
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+
+.fas,.fa{
+
+  color: #8941b6;
+  cursor: pointer;
+  &:hover{
+    color: #301892;
+  }
+}
+
+

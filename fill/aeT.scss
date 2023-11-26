@@ -1,0 +1,156 @@
+// Variables
+$toast-header-font: 'Arial', sans-serif;
+$icon-spacing: 1rem;
+$primary-color: white;
+$success-color: green;
+$danger-color: red;
+$success-bg: #09190d;
+$danger-bg: #dc3545;
+
+// Global styles
+body {
+  font-family: $toast-header-font;
+}
+
+// Toasts
+.toast {
+  &-header {
+    strong {
+      margin-right: auto;
+    }
+
+    button.btn-close {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  
+  &-body {
+    // Any specific styles for toast body
+  }
+}
+
+// Error Toast
+#aeToastE {
+  .toast-header {
+    background-color: $danger-bg;
+    color: $primary-color;
+
+    i.fa {
+      color: $primary-color;
+      margin-right: $icon-spacing;
+    }
+  }
+}
+
+// Success Toast
+#aeToastS {
+  .toast-header {
+    background-color: $success-bg;
+    color: $primary-color;
+
+    i.bi {
+      color: $primary-color;
+      margin-right: $icon-spacing;
+    }
+  }
+}
+
+#aeToastS {
+  .toast-header {
+    background-color: $success-bg;
+    color: $primary-color;
+
+    i.bi {
+      color: $primary-color;
+      margin-right: $icon-spacing;
+    }
+  }
+}
+
+#aeToastP {
+  .toast-header {
+    background-color: $success-bg;
+    color: $primary-color;
+
+    i.bi {
+      color: $primary-color;
+      margin-right: $icon-spacing;
+    }
+  }
+}
+
+// Alerts
+.alert {
+  &.alert-success {
+    i.bi {
+        color: $primary-color;
+    }
+  }
+}
+
+// Spinners
+#spin1 {
+    color: $primary-color;
+}
+
+
+
+// Delete Confirmation Toast
+#aeToastY {
+  .toast-header {
+    background-color: $danger-bg;
+    color: $primary-color;
+
+    i.fa {
+      color: $primary-color;
+      margin: $icon-spacing;
+    }
+  }
+
+  .toast-body {
+    // styles for the body of the delete confirmation toast
+
+    .row {
+      // styles for the row inside the toast body
+
+      .col {
+        // styles for the columns
+      }
+    }
+  }
+}
+
+.spinner-container {
+  position: fixed; // Use 'fixed' to cover the entire viewport
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); // Semi-transparent black for modal-like appearance
+  z-index: 1050; // Higher than most of the items on the page
+  width: 100vw; // Full viewport width
+  height: 100vh; // Full viewport height
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .spinner-border {
+    width: 3rem; // Size of the spinner
+    height: 3rem;
+    border: 0.25em solid #17B169; 
+    border-right-color: transparent; // Makes a segment of the spinner transparent
+    animation: spin 0.75s linear infinite; // Spinning animation
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+
+  .loading-text {
+    color: #fff; // White color for better visibility against the dark background
+    margin-top: 1rem; // Space between spinner and text
+    font-size: 1.25rem; // Larger font size for visibility
+  }
+}

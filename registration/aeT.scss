@@ -1,0 +1,107 @@
+// Variables
+$toast-header-font: 'Arial', sans-serif;
+$icon-spacing: 1rem;
+$primary-color: white;
+$success-color: green;
+$danger-color: red;
+$success-bg: #28a745;
+$danger-bg: #dc3545;
+
+// Global styles
+body {
+  font-family: $toast-header-font;
+}
+
+// Toasts
+.toast {
+  &-header {
+    strong {
+      margin-right: auto;
+    }
+
+    button.btn-close {
+      background-color: transparent;
+      border: none;
+    }
+  }
+  
+  &-body {
+    // Any specific styles for toast body
+  }
+}
+
+// Error Toast
+#aeToastE {
+  .toast-header {
+    background-color: $danger-bg;
+    color: $primary-color;
+
+    i.fa {
+      color: $primary-color;
+      margin-right: $icon-spacing;
+    }
+  }
+}
+
+// Success Toast
+#aeToastS {
+  .toast-header {
+    background-color: $success-bg;
+    color: $primary-color;
+
+    i.bi {
+      color: $primary-color;
+      margin-right: $icon-spacing;
+    }
+  }
+}
+
+// Alerts
+.alert {
+  &.alert-success {
+    i.bi {
+        color: $primary-color;
+    }
+  }
+}
+
+// Spinners
+#spin1 {
+    color: $primary-color;
+}
+
+.spinner-container {
+  .spinner-border {
+
+  }
+
+  .loading-text {
+    // styles for the loading text
+  }
+}
+
+// Delete Confirmation Toast
+#aeToastY {
+  .toast-header {
+    background-color: $danger-bg;
+    color: $primary-color;
+
+    i.fa {
+      color: $primary-color;
+      margin: $icon-spacing;
+    }
+  }
+
+  .toast-body {
+    // styles for the body of the delete confirmation toast
+
+    .row {
+      // styles for the row inside the toast body
+
+      .col {
+        // styles for the columns
+      }
+    }
+  }
+}
+

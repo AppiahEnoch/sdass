@@ -1,0 +1,38 @@
+.custom-footer {
+  background-image: url("devimage/11.jpg"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire element */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+  color: #5C4A3E;
+  padding: 40px 15px;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #dfdf0f;
+}
+.custom-footer .container {
+  background-color: transparent;
+  color: #5C4A3E;
+}
+.custom-footer i, .custom-footer h6 {
+  color: #F5F5DC;
+}
+.custom-footer h5 {
+  color: #F5F5DC;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+.custom-footer p {
+  font-size: 1rem;
+  line-height: 1.8;
+  background-color: transparent;
+  color: #F5F5DC;
+}
+@media (max-width: 767px) {
+  .custom-footer {
+    text-align: center;
+  }
+  .custom-footer h5 {
+    margin: 0 auto 20px;
+  }
+}/*# sourceMappingURL=aeFooter.css.map */

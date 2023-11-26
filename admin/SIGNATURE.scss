@@ -1,0 +1,11 @@
+#headteacher_signature_preview {
+    display: block; // Ensures the image is block level to respect the margin-top
+    width: 200px; // Fixed width; adjust as needed for your design
+    height: 100px; // Fixed height; adjust as needed for the typical signature size
+    object-fit: contain; // Ensures the image is scaled correctly within the fixed dimensions
+    border: 1px solid #ced4da; // Gives the image a border to distinguish the edges
+    border-radius: 4px; // Optional: rounds the corners for a smoother look
+    margin-top: 1rem; // Adds space between the input and image preview
+    background-color: #ffffff; // Optional: ensures a white background for transparent images
+  }
+  

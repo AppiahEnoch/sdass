@@ -1,0 +1,22 @@
+.carousel .carousel-control-prev, .carousel .carousel-control-next {
+  width: auto;
+  height: auto;
+  padding: 10px;
+}
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  border-radius: 50%;
+  margin: 5rem;
+}
+
+.carousel-item {
+  margin-top: 0;
+}
+.carousel-item img {
+  height: 32rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=carousel.css.map */

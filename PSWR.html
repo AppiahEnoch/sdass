@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Email</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    .email-container {
+      padding: 20px;
+    }
+    .header, .footer {
+      color:#fffdd0;
+      text-align: center;
+      padding: 20px;
+      background-color:#3b22c9;
+    }
+    .main {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .code, .link {
+      color: blue;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+    .link-button {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid blue;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+    @media only screen and (max-width: 600px) {
+      .header, .footer {
+        padding: 10px;
+      }
+      .email-container {
+        padding: 10px;
+      }
+      .code, .link {
+        font-size: 1.5rem;
+      }
+      .link-button {
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>{{app}}</h1>
+    </div>
+
+    <div class="main">
+      <h2>Password Reset Request</h2>
+      <h3>Hello, {{name}}</h3>
+      <p>Click the blue button below to reset your password</p>
+      <p>Link expires after 3 days</p>
+      <div class="link-button">
+        <a href="{{link}}">Reset Password</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>&copy;{{current_year}} All rights reserved</span>
+    </div>
+  </div>
+</body>
+</html>

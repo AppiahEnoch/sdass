@@ -1,0 +1,91 @@
+// Variables
+$image-width: 15rem;
+
+#userDetailsModal {
+  .modal-dialog {
+    // Center the modal and set maximum width
+    &.modal-dialog-centered {
+      max-width: 20rem;
+      width: auto;
+      margin: auto;
+    }
+  }
+
+  .modal-content {
+    // Make the modal more attractive
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+
+  .modal-header {
+    // Additional styles for the header
+    background-color: #f2f2f2;
+    h5 {
+      color: #333;
+    }
+  }
+
+  .modal-body {
+    // Additional styles for the body
+    background-color: #fff;
+
+    #userImage {
+      width: $image-width;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.1); // Zoom effect on hover
+      }
+    }
+
+    h6, p {
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .modal-footer {
+    // Additional styles for the footer
+    background-color: #f2f2f2;
+
+    #btnClose {
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
+
+
+
+.ae-switch-all {
+  .card-body {
+    .form-check {
+      display: flex; // Use flex to align the checkbox and label
+      justify-content: center; // Center the flex container
+      align-items: center; // Vertically align the contents
+
+      .form-check-input {
+        margin-right: 0.5rem; // Right margin to add some space between the checkbox and the label
+        margin-top: 0; // Remove the top margin if any
+        margin-bottom: 0; // Remove the bottom margin if any
+      }
+
+      .form-check-label {
+        margin-bottom: 0; // Ensures label is aligned without extra space
+      }
+    }
+  }
+}
+

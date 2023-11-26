@@ -1,0 +1,67 @@
+
+
+// Variables
+$html-bg-color: #843971;
+$body-bg-color: #843971;
+$card-bg-color: lighten($html-bg-color, 10%);
+$btn-color: darken($html-bg-color, 15%);
+$input-focus-border-color: darken($html-bg-color, 20%);
+$hover-color: lighten($html-bg-color, 20%);
+
+$link-color:#f2f2f2;
+
+$hover-color:#E8D28A;
+
+
+
+
+// Basic Style
+html, body {
+  height: 100%;
+  background: linear-gradient(45deg, $html-bg-color, $body-bg-color);
+  font-family: 'Arial', sans-serif;
+}
+
+
+@media (max-width: 575.98px) { 
+    // styles
+  }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    // styles
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    // styles
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) { 
+
+    .dropdown-bg{
+        background-color: white;
+        a{
+            font-weight: bolder;
+            color: $bg-color;
+
+            &:hover{
+                color: black;
+             text-decoration: underline;
+            }
+
+        }
+     
+    }
+
+
+    
+  }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { 
+
+  }
+  
+  

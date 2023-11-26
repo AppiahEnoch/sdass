@@ -1,0 +1,48 @@
+.container {
+  background-color: #F5F5DC;
+}
+.container .section-title {
+  font-size: 2.5rem;
+  color: #1E90FF;
+  font-weight: bold;
+  border-bottom: 3px solid #1E90FF;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+.container .card {
+  border: none;
+}
+.container .card .card-img-top {
+  border-radius: 0;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .card .card-body {
+  background-color: #1E90FF;
+  color: #F5F5DC;
+}
+.container .card .card-body .card-text {
+  font-size: 14px;
+}
+.container .card:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.moving {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  animation: scrollRightToLeft 10s linear infinite;
+}/*# sourceMappingURL=aeCard1.css.map */

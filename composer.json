@@ -1,0 +1,22 @@
+{
+    "name": "aecleancodes/ackah",
+    "autoload": {
+        "psr-4": {
+            "Aecleancodes\\Ackah\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "AppiahEnoch",
+            "email": "prignutt@gmail.com"
+        }
+    ],
+    "require": {
+        "setasign/fpdi": "^2.5",
+        "phpmailer/phpmailer": "^6.8",
+        "phpoffice/phpspreadsheet": "^1.29",
+        "setasign/fpdf": "^1.8",
+        "phpoffice/phpword": "^1.1",
+        "dompdf/dompdf": "^2.0"
+    }
+}

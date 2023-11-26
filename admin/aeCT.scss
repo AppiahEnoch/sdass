@@ -1,0 +1,69 @@
+#teacher_menu{
+  .class_detail_text{
+    font-size: small;
+    font-weight: bold;
+    color: #000000;
+
+  }
+}
+
+
+
+.search-container {
+  height: 60px;
+
+}
+
+.search-box {
+  position: relative;
+}
+.general-search-input{
+  padding: 10px;
+  padding-left: 30px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  min-width: 30rem;
+
+
+  // add shadow more style
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+
+  // change focus style
+  &:focus {
+      outline: none;
+      box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+      border: 1px solid rgba(81, 203, 238, 1);
+      border-radius: 20px;
+      // color
+ 
+  // border-color: ;color
+  border-color: rgba(81, 203, 238, 1);
+  }
+
+  &::placeholder {
+      color: rgba(81, 203, 238, 1);
+  }
+
+  // give good text color
+  color: rgb(1, 8, 9);
+  
+
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+}
+
+// medi query for mobile
+@media (max-width: 768px) {
+  .general-search-input{
+      min-width: 20rem;
+  }
+}
+

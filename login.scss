@@ -1,0 +1,77 @@
+// Base styles for the container and form
+
+    .login-form {
+        // Styling for the 'Forgot password?' link
+        a {
+            display: inline-block;
+            margin-top: 8px;
+            transition: color 0.3s, transform 0.3s;
+
+            &:hover {
+                color: darken($color: #007BFF, $amount: 10%); // Darkens the primary color slightly on hover
+                transform: translateY(-2px); // Moves the link slightly upwards on hover
+                text-decoration: underline;
+            }
+        }
+    }
+
+
+.login-form {
+    z-index: 1 !important;
+  background: #F6F6F6;
+  
+  
+    position:absolute;
+    top: 6rem;
+    right: 40%;
+    max-width: 20rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.5rem;
+    border: 3px solid #1CAC78;
+  
+  
+  
+
+
+
+    // on medium screens and tablet
+    @media (max-width: 768px) {
+        top: 15rem;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+  }
+  
+
+  @media (max-width: 366px) {
+    // Your styles for viewports 366px wide and smaller go here
+    .ae-large-only {
+      display: none !important; // This will hide elements with the 'ae-large-only' class on small screens
+    }
+  
+    // Additional styles for smaller screens can be added here
+  }
+
+
+
+  @media (max-width: 360px) { // Targeting devices with a width of 360px and smaller
+    .hambergerColor2 {
+      // Apply new styles for the hamburger button
+      font-size: 0.75rem; // Smaller font size if it's an icon font
+      color: #ffdd57; // Change the color to something more visible, like a bright yellow
+  
+      .navbar-toggler-icon {
+    // Path to a custom icon if you have one
+        // If you're not using a custom icon, you can apply other styles directly to the default Bootstrap icon:
+        background-size: 70%; // Reduce the size of the default toggler icon
+      }
+    }
+  }
+  
+
+

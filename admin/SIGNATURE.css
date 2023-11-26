@@ -1,0 +1,11 @@
+#headteacher_signature_preview {
+  display: block;
+  width: 200px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  margin-top: 1rem;
+  background-color: #ffffff;
+}/*# sourceMappingURL=SIGNATURE.css.map */

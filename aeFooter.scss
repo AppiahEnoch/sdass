@@ -1,0 +1,49 @@
+.custom-footer{
+    $footer-bg: #F5F5DC; // Cream
+    $footer-text-color: #5C4A3E; // Darker brown for better contrast
+    $footer-title-color: #f0920e; // Medium brown for title
+    $footer-border-color: #dfdf0f; // Light brown border
+
+    .container {
+      background-color: transparent;
+      color: $footer-text-color;
+    }
+
+    background-image: url('devimage/11.jpg');  /* Replace with your image path */
+    background-size: cover;  /* Cover the entire element */
+    background-repeat: no-repeat;  /* Do not repeat the image */
+    background-position: center;  
+
+  
+    color: $footer-text-color;
+    padding: 40px 15px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05);
+    border-top: 1px solid $footer-border-color;
+
+    i,h6{
+        color: #F5F5DC;
+    }
+
+    h5 {
+        color:#F5F5DC;
+        font-weight: bold;
+        font-size: 1.6rem; // Make the title larger
+        margin-bottom: 20px;
+        background-color: transparent;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.8; // Increased line height for better readability
+        background-color: transparent;
+        color: #F5F5DC;
+    }
+
+    @media (max-width: 767px) {
+        text-align: center;
+
+        h5 {
+            margin: 0 auto 20px;
+        }
+    }
+}

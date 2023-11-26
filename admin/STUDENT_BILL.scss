@@ -1,0 +1,363 @@
+#wrapper5,#wrapper6{
+    $mobile-breakpoint: 768px;
+
+
+
+.custom-form, .table_wrapper {
+  max-width: 50rem;
+  min-width: 100%; // Allows the form to fill the full width on smaller screens
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem auto; // Added a margin to avoid touching the screen edges
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  position: relative;
+
+  .form-label {
+    margin-bottom: 0rem;  // Adjust as needed to make the label closer to the input
+    font-family: sans-serif;
+    font-size: small;
+  }
+
+  // Media query to target tablet to desktop screens
+  @media (min-width: $mobile-breakpoint) {
+    min-width: 45rem; // Only apply this min-width for larger screens
+  }
+
+
+
+  #payee-list {
+    position: absolute;
+ 
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); // Shadow for the list box
+    top: 10;
+    z-index: 10;
+    width: 80%;
+
+    #payee-suggestion {
+        
+        .list-group-item {
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+
+            &:first-child {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            &:last-child {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            &:hover {
+                background-color: rgb(151, 117, 237);
+                color: #fff;
+            }
+        }
+        
+    }
+}
+
+}
+
+
+
+
+  
+  input[type],
+  input[type="file"], button,
+  textarea,
+  select {
+    &:hover, &:focus {
+  
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+
+
+
+
+
+.aeSubmit-buttons {
+
+  
+    .btn {
+  
+      transition: all 0.3s ease-in-out; // Smooth transitions for hover effects
+
+  
+      // Hover effect
+      &:hover {
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Add a subtle shadow on hover
+      }
+  
+      // Focus effect
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); // Bootstrap's focus shadow
+        outline: none; // Remove browser default outline
+      }
+    }
+  
+    #submitFee {
+
+  
+    }
+  
+   
+
+
+   
+  }
+  
+
+
+
+  .filter-card {
+
+position: absolute;
+width: 25rem;
+top: 10;
+z-index: 10;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa; // light gray background
+    border: 4px solid #06233d; // subtle border
+    border-radius: 8px; // rounded edges
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); // drop shadow
+
+    h6 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #333; // dark gray text
+    }
+
+    .mb-3 {
+        margin-bottom: 1rem !important; // increased margin for more spacing
+
+        label {
+            font-weight: 500; // bold labels
+            margin-bottom: 0.5rem; // reduced space between label and input
+        }
+
+        .input-group {
+            .form-control,
+            select.form-control {
+                border: 1px solid #ced4da; // border color
+                border-radius: 5px; // slightly rounded edges
+            }
+
+            .input-group-text {
+                background-color: #e9ecef; // light gray background for icons
+                border-color: #ced4da; // border color
+                border-radius: 5px; // slightly rounded edges
+
+                i.fas {
+                    color: #495057; // icon color
+                }
+            }
+        }
+
+        button {
+            font-weight: 600; // bold button text
+            border-radius: 5px; // slightly rounded edges
+
+            &:hover {
+                filter: brightness(90%); // slightly darken the button on hover
+            }
+        }
+    }
+}
+
+
+.btn-secondary{
+    background-color: transparent;
+    border: solid 1px blue;
+    color: black;
+    &:hover {
+        background-color: rgb(230, 223, 236);
+        color: black;
+      }
+}
+
+.del-icon{
+    color: red;
+    &:hover {
+        color: rgb(230, 223, 236);
+      }
+}
+
+
+
+
+#class_bill_card_grand_total {
+  .card-header {
+    background-color: #f5f5f5; // Light gray header background
+    border-bottom: 1px solid #e0e0e0; // Border separating the header and body
+
+    h5 {
+      margin: 0; // Remove default margin from h5
+      font-weight: bold; // Make the text bold
+    }
+  }
+
+  .card-body {
+    padding: 1em; // Give it some padding
+
+    #grand_total_amount {
+      font-size: 1.5em; // Make the amount slightly bigger
+      font-weight: bold; // Bold the grand total
+      color: #333; // Dark text color
+    }
+  }
+
+  // on mobile screens, make the card body full width
+
+}
+
+
+.class_bill_Class_total-row{
+  
+  background-color: #f7f7f7; // Light gray background for distinction
+  font-weight: bold; // Make the text bold
+  
+  td {
+    padding: 0.5em 1em; // Padding for the table cells
+    border-top: 1px solid #e0e0e0; // Border for better separation
+
+    &:first-child {
+      color: #333; // Dark text color for "Total"
+    }
+
+    &:last-child {
+      color: #007bff; // Use a different color like blue for the total amount
+    }
+  }
+
+
+
+}
+
+
+.class_bill_card {
+
+
+// thick black border
+border: 1px solid #420cf1;
+border-radius: 0.5rem;
+
+// 3d shadow
+//box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+// white background
+background-color: #fff;
+
+
+}
+
+.card-header {
+  color: #007bff;
+  text-shadow: 
+    1px 1px 0 #ccc,
+    2px 2px 0 #c9c9c9,
+    3px 3px 0 #bbb,
+    4px 4px 0 #b9b9b9,
+    5px 5px 0 #aaa,
+    6px 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+#grand_total_amount{
+  color : red !important;
+}
+
+.class_bill_print_icon{
+  transition: all 0.3s ease-in-out; // Smooth transitions for hover effects
+  cursor: pointer;
+
+
+
+  &:hover {
+    
+    // slightly darken the button on hover
+    filter: brightness(90%);
+    // zoom
+    transform: scale(1.2);
+    z-index: 100;
+  }
+}
+
+
+.card {
+  &.class_bill_card {
+    .table {
+      th, td {
+        &:nth-child(1) {
+          width: 75%;
+        }
+        &:nth-child(2) {
+          width: 20%;
+        }
+        &:nth-child(3) {
+          width: 5%;
+        }
+      }
+      
+    }
+
+  }
+}
+
+
+// mobile responsive
+
+
+@media (max-width: 767px) {
+
+  .card-body {
+
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-bottom: .2rem !important;
+
+  
+    // All child elements inside .card-body
+    > * {
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+  
+    table {
+      width: 100% !important;
+      max-width: 100% !important; // Ensure table does not exceed the width of .card-body
+   
+   
+    
+   
+      td,
+      tr {
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+    }
+  
+    // Prevent table from overflowing the card-body
+    overflow-x: auto; // Allows horizontal scrolling if the table is wider than the .card-body
+  }
+
+
+
+  
+}
+
+}

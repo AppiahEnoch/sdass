@@ -1,0 +1,55 @@
+// Extra small devices (portrait phones, less than 576px)
+$bg-color: #1c0147;
+$hover-color: #FFC712;
+$text-color: white;
+$dropdown-bg:#DD9933;
+
+$heading-color:#FFC712;
+
+@media (max-width: 575.98px) { 
+    // styles
+  }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    // styles
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    // styles
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) { 
+
+    .dropdown-bg{
+       
+        a{
+        
+
+            &:hover{
+            
+            }
+
+        }
+     
+    }
+
+
+    
+  }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { 
+
+  }
+  
+
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    #login2,#login1,#register {
+      max-width: 7rem;
+    }
+}

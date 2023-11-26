@@ -1,0 +1,71 @@
+$bg-color: white;
+$hover-color: #FFC712;
+$text-color: black;
+$dropdown-bg:#fffdd0;
+
+$heading-color:#fffdd0;
+
+$all-link-color:#eee8e8;
+
+
+  
+
+html, body {
+  background-color: $text-color;
+  background-color: $bg-color;
+}
+
+.bg-color{
+    background-color: $bg-color;
+    color: $text-color;
+    background-image: url('devimage/11.jpg');  /* Replace with your image path */
+    background-size: cover;  /* Cover the entire element */
+    background-repeat: no-repeat;  /* Do not repeat the image */
+    background-position: center;  
+
+
+}
+
+.buttom-border{
+    border-bottom: 0px solid $bg-color; /* This will create a 2-pixel thick, solid, black border at the bottom of the element */
+}
+
+.heading-color{
+    color: $heading-color;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    
+    
+}
+
+
+
+.logo {
+  width: 12rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+
+
+
+#searchIcon{
+  color:#DADD98;
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+

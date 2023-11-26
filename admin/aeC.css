@@ -1,0 +1,58 @@
+.activity-card {
+  width: 15rem;
+  margin-bottom: 1rem;
+}
+@media (max-width: 575.98px) {
+  .activity-card {
+    margin-bottom: 1rem;
+  }
+}
+.activity-card .card {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: none;
+}
+.activity-card .card .card-img-top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 5rem;
+  max-width: 5rem;
+  margin: auto;
+}
+.activity-card .card .card-body {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.activity-card .card .card-body .card-text {
+  font-size: 1rem;
+  color: #666666;
+  text-align: center;
+}
+
+.activity-card .card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.activity-card .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+.activity-card .card .card-img-top {
+  transition: transform 0.4s ease-in-out;
+}
+.activity-card .card .card-img-top:hover {
+  transform: scale(1.05);
+}
+.activity-card .card .card-body {
+  background-color: #fff;
+  transition: background-color 0.3s ease-in-out;
+}
+.activity-card .card .card-body .card-text {
+  transition: color 0.3s ease-in-out;
+}
+.activity-card .card .card-body .card-text:hover {
+  color: #007BFF;
+}
+.activity-card .card .card-body:hover {
+  background-color: #f5f5f5;
+}/*# sourceMappingURL=aeC.css.map */

@@ -1,0 +1,40 @@
+html, body {
+  background-color: white;
+}
+
+.buttom-border {
+  border-bottom: 1px solid #8C003B; /* This will create a 2-pixel thick, solid, black border at the bottom of the element */
+}
+
+.heading-color {
+  color: #FFC712;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.link-icon {
+  color: #DD9933;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+.link-icon:hover {
+  color: yellow;
+}
+
+.logo {
+  width: 12rem;
+}
+
+.bg-color {
+  background-color: #8C003B;
+}
+
+.dropdown-bg {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-left: 2rem;
+  background-color: #DD9933;
+}
+.dropdown-bg a {
+  color: white;
+}/*# sourceMappingURL=style1.css.map */

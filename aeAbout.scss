@@ -1,0 +1,182 @@
+$white-color: white; // Variable to control all white colors
+
+.ae-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #18453B;
+    margin-bottom: 30px;
+
+    padding: 10px;
+  }
+
+#stud_carouselExampleCaptions {
+  $carousel-background: $white-color;
+  $carousel-text-color: #333;
+  $carousel-caption-bg: rgba(0, 0, 0, 0.6);
+  $carousel-control-color: #fff;
+
+  background-color: $carousel-background;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .carousel-inner {
+    .carousel-item {
+      img {
+        width: 100%;
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
+      }
+    }
+
+    .carousel-caption {
+      background-color: $carousel-caption-bg;
+      border-radius: 0;
+      padding: 10px 20px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: $carousel-text-color;
+      text-align: center;
+
+      h5 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.2));
+
+    &:hover,
+    &:focus {
+      color: $carousel-control-color;
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+    width: auto;
+    height: auto;
+  }
+}
+
+#aboutGrid1 {
+  $blue-color: #18453B;
+  background-color: #f2f2f2;
+
+  .cardTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: $blue-color;
+    margin: 10px;
+    background-color: $white-color;
+  }
+
+  .card {
+    border: 1px solid $blue-color;
+    border-radius: 10px;
+    background-color: $white-color;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px $blue-color;
+    transition: all 0.3s ease-in-out;
+
+
+    &:hover {
+      transform: scale(1);
+      box-shadow: 10px 10px 10px $blue-color;
+    }
+
+    .card-body {
+      text-align: center;
+      background-color: #4B6F44;
+      .card-title, .card-text {
+        color: $white-color;
+        background-color:#4B6F44;
+      }
+    }
+  }
+}
+
+#leaderGrid {
+  $blue-color: #1E90FF;
+  background-color: #f2f2f2;
+
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    color: $blue-color;
+    margin-bottom: 30px;
+    background-color: $white-color;
+    padding: 10px;
+  }
+
+  .cardTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: $blue-color;
+    margin: 10px;
+    background-color: $white-color;
+  }
+
+  .card {
+    border: 1px solid $blue-color;
+    border-radius: 10px;
+    background-color: $white-color;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px $blue-color;
+    transition: all 0.3s ease-in-out;
+
+
+    &:hover {
+      transform: scale(1);
+      box-shadow: 10px 10px 10px $blue-color;
+    }
+
+    .card-img-top {
+      width: 6rem;
+      height: 6rem;
+      margin: 0 auto;
+      display: block;
+      border-radius: 50%;
+    }
+
+    .card-body {
+      text-align: center;
+      background-color: #4B6F44;
+
+      .card-title, .card-text {
+        color: $white-color;
+        background-color:#4B6F44;
+      }
+    }
+  }
+
+
+}
+
+
+#ae-title{
+  text-align: center;
+  font-size: 2rem;
+  color: #18453B;
+  margin-bottom: 30px;
+  font-weight: bolder;
+
+
+}

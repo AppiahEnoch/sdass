@@ -1,0 +1,25 @@
+DELIMITER //
+
+
+
+CREATE TRIGGER USERTYPE
+BEFORE INSERT ON registration 
+FOR EACH ROW 
+BEGIN 
+    DECLARE tempUserType ENUM('Teaching Staff', 'Non-teaching Staff', 'Admin', 'Super Admin');
+
+    -- Fetch userType from temp_user based on mobile number
+    SELECT userType INTO tempUserType 
+    FROM temp_user 
+    WHERE userMobile = NEW.mobile;
+
+    -- Set the user_type column
+    SET NEW.user_type = tempUserType;
+    
+    -- Delete the corresponding record from temp_user
+    DELETE FROM temp_user WHERE userMobile = NEW.mobile; 
+END;
+
+//
+
+DELIMITER ;

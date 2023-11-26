@@ -1,0 +1,45 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.toast-header strong {
+  margin-right: auto;
+}
+.toast-header button.btn-close {
+  background-color: transparent;
+  border: none;
+}
+#aeToastE .toast-header {
+  background-color: #dc3545;
+  color: white;
+}
+#aeToastE .toast-header i.fa {
+  color: white;
+  margin-right: 1rem;
+}
+
+#aeToastS .toast-header {
+  background-color: #28a745;
+  color: white;
+}
+#aeToastS .toast-header i.bi {
+  color: white;
+  margin-right: 1rem;
+}
+
+.alert.alert-success i.bi {
+  color: white;
+}
+
+#spin1 {
+  color: white;
+}
+
+#aeToastY .toast-header {
+  background-color: #dc3545;
+  color: white;
+}
+#aeToastY .toast-header i.fa {
+  color: white;
+  margin: 1rem;
+}/*# sourceMappingURL=aeT.css.map */

@@ -1,0 +1,57 @@
+.container {
+    background-color: #F5F5DC; // Cream color
+  
+    .section-title {
+      font-size: 2.5rem;
+      color: #1E90FF; // Blue color
+      font-weight: bold;
+      border-bottom: 3px solid #1E90FF; // Adds a blue underline
+      display: inline-block; // Makes the border fit the text width
+      padding-bottom: 10px;
+      margin-bottom: 30px; // Space between the title and cards
+    }
+  
+    .card {
+      border: none; // Removes default card border
+  
+      .card-img-top {
+        border-radius: 0; // Makes the top image squared
+        height: 200px;
+        object-fit: cover; // Ensures images cover the space without distortion
+      }
+  
+      .card-body {
+        background-color: #1E90FF; // Blue color
+        color: #F5F5DC; // Cream color for text
+  
+        .card-text {
+          font-size: 14px;
+        }
+      }
+  
+      &:hover {
+        transform: scale(1.05); // Slight scale on hover for effect
+        transition: all 0.3s ease; // Smooth transition
+      }
+    }
+  }
+  
+
+
+  @keyframes scrollRightToLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .moving {
+    display: inline-block; 
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: scrollRightToLeft 10s linear infinite;
+  }
+  

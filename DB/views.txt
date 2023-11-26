@@ -1,0 +1,14 @@
+CREATE VIEW class_bill_view AS 
+SELECT 
+    class_bill.*,
+    CONCAT(registration.firstname, ' ', registration.lastname) AS full_name,
+    bill_item.item AS bill_item,
+    school_class.class_name AS class_name
+FROM 
+    class_bill
+LEFT JOIN 
+    registration ON class_bill.user_id = registration.id
+LEFT JOIN
+    bill_item ON class_bill.item_id = bill_item.id
+LEFT JOIN
+    school_class ON class_bill.student_class_id = school_class.id;

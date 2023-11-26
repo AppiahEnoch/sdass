@@ -1,0 +1,13 @@
+@media (min-width: 992px) {
+  .dropdown-bg {
+    background-color: white;
+  }
+  .dropdown-bg a {
+    font-weight: bolder;
+    color: #8C003B;
+  }
+  .dropdown-bg a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+}/*# sourceMappingURL=style2.css.map */

@@ -1,0 +1,364 @@
+$mobile-breakpoint: 768px;
+
+
+.custom-form, .view {
+  max-width: 50rem;
+  min-width: 100%; // Allows the form to fill the full width on smaller screens
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem auto; // Added a margin to avoid touching the screen edges
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  position: relative;
+
+  // Media query to target tablet to desktop screens
+  @media (min-width: $mobile-breakpoint) {
+    min-width: 45rem; // Only apply this min-width for larger screens
+  }
+}
+
+
+
+
+  
+  input[type],
+  input[type="file"],
+  textarea,
+  select {
+    &:hover, &:focus {
+  
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+
+  .search-container {
+    height: 60px;
+
+}
+
+.search-box {
+    position: relative;
+}
+
+
+#admission_search {
+
+    .row {
+      height: 100%; // take full height of the parent
+  
+      .col-auto {
+        .search-box {
+          position: relative; // set to relative so we can position the icon inside it
+          background-color: #fff; // white background
+          border-radius: 25px; // rounded edges for the search box
+          overflow: hidden; // ensure inner content doesn't spill outside of rounded edges
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); // subtle shadow for the search box
+          z-index: 300;
+         
+   
+          input.admission-search {
+            z-index: 200;
+            width: 100%;
+      
+            padding: 0.5rem 2.5rem 0.5rem 1rem; // increased padding on the right for the icon
+            border: none; // remove default border
+            outline: none; // remove focus outline
+            font-size: 1rem;
+            background-color: transparent; // inherit from the parent .search-box
+            margin-left: 1rem;
+          }
+        }
+      }
+
+      .search-icon {
+        position: absolute;
+        z-index: -10;
+        right: 1rem; // adjusted positioning
+        font-size: 16px;
+        color: #aaa;
+      }
+    }
+}
+
+
+
+
+
+#admission-list {
+    border: none; // Removing the border
+    border-radius: 10px; // Rounding the corners
+  
+    #admission-suggestion {
+      .list-group-item {
+        border: none; // Removing the border from list items
+        border-radius: 0; // Ensure no rounded corners on individual items
+  
+        &:first-child {
+          border-top-left-radius: 10px; // Top left rounded corner for the first item
+          border-top-right-radius: 10px; // Top right rounded corner for the first item
+        }
+  
+        &:last-child {
+          border-bottom-left-radius: 10px; // Bottom left rounded corner for the last item
+          border-bottom-right-radius: 10px; // Bottom right rounded corner for the last item
+        }
+
+        &:hover {
+            background-color: rgb(151, 117, 237);
+            color: #fff;
+        }
+      }
+    }
+  }
+  
+
+
+
+
+  $primary-color: #6f62ff;
+  $secondary-color: #ff625f;
+  
+#admissionTitle {
+    // Adjustments for the outer row (if needed)
+  
+    .card {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+   
+      width: 100%;
+      max-width: 800px; // example width, adjust as needed
+      
+  
+      h2 {
+        color: $primary-color;
+        padding: 1rem 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border-bottom: 2px solid $primary-color;
+      }
+
+      .small {
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin-left: 0.5rem;
+        vertical-align: middle;
+      }
+  
+      .row.bg-danger {
+        .col-6 {
+          padding: 0.5rem;
+          
+          .fa {
+            cursor: pointer;
+            transition: color 0.3s ease;
+  
+            &:hover {
+              color: $secondary-color;
+            }
+          }
+  
+          #admission_edit {
+            color: $primary-color;
+  
+          
+          }
+
+          .dropdown-menu {
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+  
+          &.bg-primary {
+        // override bootstrap's primary color
+  
+            #admission_print {
+              color: white;
+  
+              .small {
+                font-size: 0.8rem;
+                font-weight: 300;
+                margin-left: 0.5rem;
+                vertical-align: middle;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  .dropdown-menu {
+    z-index: 1000;
+    
+}
+
+
+
+
+  #admission_search {
+    .search-box {
+      input.admission-search {
+        // Styles for the search input, if needed
+      }
+  
+      .fa-search {
+        // Styles for the search icon, if needed
+      }
+  
+      #admission-list {
+        #admission-suggestion {
+          .list-group-item {
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+  
+            &:hover {
+              background-color: rgb(41, 29, 29)
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  #admission_edit:hover {
+    color: #7b1fb9; 
+  }
+
+  #admission_print:hover {
+    color: #7b1fb9; // Adjust as needed.
+  }
+
+
+  // Base styling for the card
+  #studentPassportImageContainer {
+    .card {
+      width: 10em;
+      height: 10em;
+      overflow: hidden; // Ensure nothing overflows the card boundaries
+      position: relative; // Makes it a reference point for absolute positioning
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      background-color: #6f62ff;
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+      }
+  
+      .card-img-top {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;  // Cover ensures the image fills the space without distortion, cropping if needed
+        position: absolute; // Absolute positioning ensures it's always at the top of the card
+        top: 0; 
+        left: 0;
+      }
+  
+      .card-body {
+        position: absolute; // Positioning it at the bottom of the card
+        bottom: 0; 
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8); // Making it slightly translucent to overlay over the image
+  
+        .card-title {
+          font-size: 0.625em; 
+          text-align: center;
+          margin: 0; // To ensure the title does not push the layout
+          padding: 5px 0; // Added some padding for spacing
+       
+        }
+      }
+    }
+
+    #studentCardTitle{
+      font-size: small;
+      font-weight: bold;
+      background-color: #6f62ff;
+      color: whitesmoke;
+
+    }
+  }
+  
+  #admission_list_download_1 {
+    cursor: pointer;
+    .download_text {
+      font-size: 1em;
+      font-weight: bold;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: normal;
+      cursor: pointer;
+    }
+
+    &:hover {
+      color: #7b1fb9;
+    }
+  }
+  
+
+  .ae-print {
+    cursor: pointer;
+    font-size: 24px;
+    color: #4a4a4a;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  
+    &:hover {
+      background-color: darken(#f2f2f2, 10%);
+      color: darken(#4a4a4a, 10%);
+    }
+  
+    &:active {
+      background-color: darken(#f2f2f2, 20%);
+      color: darken(#4a4a4a, 20%);
+    }
+  }
+  
+
+// CENTER TEXT IN EACH CELL CELL HEIGHT 50PX
+#admission_list_filter_table {
+  th, td {
+    border: 1px solid #dee2e6; // Assuming you want to maintain the border as shown in the image
+    padding: 0.5rem; // Padding within the cells for spacing
+    text-align: center; // Center text horizontally
+    vertical-align: middle; // Center text vertically
+ 
+    align-items: center; // Center content vertically within the cell
+    justify-content: center; // Center content horizontally within the cell
+    overflow: hidden; // Prevent content from overflowing the cell
+
+    img {
+      width: 50px; // Set a fixed width for the image
+      height: 50px; // Set a fixed height for the image
+      object-fit: cover; // Ensure the image covers the area
+      border-radius: 50%; // Make the image round
+    }
+  }
+}
+  
+
+// very small image size
+#ae_image_download{
+  float:right;
+  img {
+    width: 40px; // Set a fixed width for the image
+    height: 40px; // Set a fixed height for the image
+    object-fit: cover; // Ensure the image covers the area
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+
+
+
+}

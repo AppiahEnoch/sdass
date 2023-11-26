@@ -1,0 +1,416 @@
+
+  .ae-print {
+      cursor: pointer;
+      font-size: 24px;
+      color: #4a4a4a;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 4px;
+      margin: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    
+      &:hover {
+        background-color: darken(#f2f2f2, 10%);
+        color: darken(#4a4a4a, 10%);
+      }
+    
+      &:active {
+        background-color: darken(#f2f2f2, 20%);
+        color: darken(#4a4a4a, 20%);
+      }
+    }
+
+
+    .ae-save-icon {
+      font-size: 1.5rem; // Adjust the icon size as needed
+      position: relative; // Relative positioning to place the text span absolutely within it
+      cursor: pointer; // To indicate it's clickable
+    
+      .ae-save-text {
+        position: absolute; // Absolute positioning to place it below the icon
+        bottom: -1rem; // Position the text below the icon
+        left: 50%; // Center the text horizontally
+        transform: translateX(-50%); // Precise centering correction
+        font-size: 0.75rem; // Smaller font size for the text
+        color: inherit; // Inherit the color from the parent if needed
+      }
+
+      &:hover{
+        color: #28a745;
+      }
+    }
+
+    .ae-delete-icon{
+      font-size: 1.5rem; // Adjust the icon size as needed
+      position: relative; // Relative positioning to place the text span absolutely within it
+      cursor: pointer; // To indicate it's clickable
+
+      color: red;
+
+      
+      &:hover{
+        color: #dc3545;
+      }
+    
+    }
+    
+    
+    .ae-download {
+      cursor: pointer;
+      font-size: 24px;
+      color: #4a4a4a;
+      padding: 10px;
+      background-color: #f2f2f2;
+      border-radius: 4px;
+      margin: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    
+      &:hover {
+        background-color: #e2e2e2; // Slightly lighter than the regular background
+        color: #333; // Slightly darker for contrast
+      }
+    
+      &:active {
+        background-color: #d0d0d0; // Even lighter for the pressed effect
+        color: #222; // Even darker for contrast
+      }
+    
+      &::before {
+        content: "\f019"; // Unicode for FontAwesome's download icon
+        font-family: 'FontAwesome';
+        margin-right: 5px;
+      }
+    }
+    
+  
+    $mobile-breakpoint: 768px;
+  
+  
+  
+  
+  
+  
+  
+    
+    input[type],
+    input[type="file"],
+    textarea,
+    select {
+      &:hover, &:focus {
+    
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+  
+  
+  
+  
+    .ae-search-option{
+      z-index: 1000;
+      cursor: pointer;
+  
+      max-width: 37.5rem;
+      position: absolute;
+  
+    
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      border: none;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    
+      &:not(.d-none) {
+        animation: slideDown 0.3s ease forwards;
+      }
+    
+      .list-group {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    
+        .list-group-item {
+          cursor: pointer;
+          position: relative;
+          background-color: #fff;
+          padding: 1rem 1.5rem 1rem 3rem; // make space for the icon
+          border: none;
+          border-bottom: 1px solid #f0f0f0;
+          color: #333;
+          font-size: 1rem;
+          transition: background-color 0.2s ease;
+    
+          &:before { // FontAwesome icon before each item
+            content: '\f002'; // FontAwesome search icon unicode
+            font-family: 'FontAwesome';
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+            font-size: 1rem;
+          }
+    
+          &:last-child {
+            border-bottom: none;
+          }
+    
+          &:hover {
+            background-color: #d5cfcf;
+         
+          }
+        }
+      }
+  
+  
+  
+   @keyframes slideDown {
+      from {
+        transform: translateY(-10px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+    }
+    
+   
+    
+  
+  
+  
+  
+  
+  
+  
+    .ae-table {
+      display: block; // Change the display to block to apply overflow
+      max-height: 400px; // Set a maximum height, adjust as needed
+      overflow-y: auto; // Enable vertical scrolling
+      margin-bottom: 1rem; // Add space below the table
+      
+      .table {
+        border-collapse: collapse; // Ensure the table borders are collapsed into a single border
+        width: 100%; // The table should occupy the full width of its container
+        background-color: #fff; // White background for the table
+    
+        thead {
+          th {
+            background-color: #1CAC78;
+            color: #150303; // White color for the header text
+            font-weight: 700; // Bold font weight for the header
+            padding: 0.75rem; // Padding inside the header cells
+            border-bottom: 2px solid #dee2e6; // Border to separate header from body
+            text-align: center; // Center the text in header cells
+          }
+        }
+    
+        tbody {
+          td {
+            padding: 0.75rem; // Padding inside body cells
+            border-bottom: 1px solid #dee2e6; // Border between rows
+            text-align: center; // Center the text in body cells
+            &:first-child {
+              border-left: 2px solid #dee2e6; // Left border for the first cell
+            }
+            &:last-child {
+              border-right: 2px solid #dee2e6; // Right border for the last cell
+            }
+          }
+    
+          tr {
+            &:hover {
+              background-color: #f8f9fa; // Slight highlight on hover for interactivity
+            }
+          }
+        }
+    
+        // Button styles
+        .btn-danger {
+          color: #fff; // White text color for contrast
+          background-color: #dc3545; // Standard Bootstrap red for 'danger' actions
+          border-color: #dc3545; // Same for the border
+          &:hover {
+            background-color: #c82333; // Darken the color slightly on hover
+            border-color: #bd2130; // Same for the border
+          }
+        }
+      }
+    
+      @media (max-width: 576px) {
+        .table {
+          th, td {
+            padding: 0.5rem; // Reduce padding on smaller screens
+            font-size: 0.8rem; // Smaller font size for better fit on mobile devices
+          }
+        }
+      }
+    }
+    
+    
+  
+  
+    .ae-form-label1 {
+      text-align: center; // Center the text
+      font-size: 2rem; // Large font size for h1
+      font-weight: bold; // Make the text bold
+      color: #333; // Dark color for text
+      text-transform: uppercase; // Uppercase text for stylistic preference
+    
+      // 3D effect
+      text-shadow: 
+        1px 1px 0 #bbb, // Light shadow on the bottom-right
+        2px 2px 0 #999, // Middle shadow
+        3px 3px 0 #777; // Darker shadow furthest away
+    
+      // Responsive design for smaller screens
+      @media (max-width: 768px) {
+        font-size: 1.5rem; // Smaller font size on medium screens
+        text-shadow: 
+          0.5px 0.5px 0 #bbb, 
+          1px 1px 0 #999, 
+          1.5px 1.5px 0 #777; // Adjusted shadow for a consistent look on smaller screens
+      }
+    }
+  
+  
+  
+    
+    
+    
+    .ae-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: #f8f9fa; // A light background for the totals row
+      border-top: 2px solid #e9ecef; // A subtle border to distinguish the totals row
+      margin-top: 1rem; // Space above the totals row
+      margin-bottom: 1rem; // Space below the totals row
+    
+      .ae-table-total {
+        font-size: 1.25rem; // A larger font size for emphasis
+        color: #343a40; // A dark, professional color for text
+        font-weight: bold; // Bold font weight for importance
+        margin: 0; // Removes default margin from headings
+    
+        .total {
+          // Style for the 'Records' and 'Total Amount' text
+          color: #007bff; // A color that stands out, but remains professional
+    
+          .total_records,
+          .total_amount {
+            font-size: 1.25rem; // Maintains the same font size for the numbers
+            color: #28a745; // A positive, finance-associated color
+          }
+        }
+      }
+    
+      // Responsive adjustments for smaller screens
+      @media (max-width: 768px) {
+        flex-direction: column; // Stack the totals vertically on small screens
+    
+        .ae-table-total {
+          margin-bottom: 0.5rem; // Add some space between the totals
+          text-align: center; // Center the text for a cleaner look on small screens
+        }
+      }
+    }
+    
+  
+    .ae-no-focus {
+      pointer-events: none; // Prevents the input from being clickable
+      cursor: default; // Changes the cursor to the default icon
+      background-color: #e9ecef; // A light gray background to indicate it is not interactive
+      color: #6c757d; // Dim text color for a "disabled" look
+      border-color: #ced4da; // A border color that fits with the disabled theme
+    
+      &:hover {
+        border-color: #ced4da; // Maintain the border color on hover
+      }
+    }
+    
+    .ae-print-only {
+      display: none !important; // Hide these elements on screen
+    
+      @media print {
+        display: block !important; // Show these elements when printing
+      }
+    }
+  
+  
+      
+    .fas,.fa{
+    
+      color: #1CAC78;
+      cursor: pointer;
+      &:hover{
+        color: #006A4E;
+      }
+    }
+    
+  
+    .btn-primary{
+      background-color: #1CAC78;
+      border-color: #1CAC78;
+      &:hover{
+        background-color: #006A4E;
+        border-color: #006A4E;
+      }
+      
+  
+    }
+  
+  
+    .btn-secondary {
+      background-color: transparent;
+      border: solid 1px #006A4E;
+      color: black;
+    }
+    .btn-secondary:hover {
+      background-color: rgb(230, 223, 236);
+      color: black;
+    }
+
+
+
+    .admission_number_totals {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
+      background-color: #f7f7f7; // A soft, light background color for contrast
+      border-radius: 8px; // Rounded corners for a modern look
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+      margin: 1rem 0; // Vertical spacing
+    
+      .col {
+        text-align: center; // Center the text within each column
+        margin: 0.5rem; // Spacing around each column
+    
+        p {
+          color: #333; // Dark color for text for better readability
+          font-size: 1.1rem; // Slightly larger font size for emphasis
+          font-weight: 500; // Medium weight for the text
+    
+          span {
+            font-weight: 700; // Bold for the numbers to stand out
+            color: #0056b3; // Use a distinctive color for emphasis
+          }
+        }
+    
+        // Responsive adjustments for smaller screens
+        @media (max-width: 768px) {
+          flex: 0 0 33%; // Each column takes up one third of the container width
+          max-width: 33%; // Max-width to match flex-basis
+    
+          p {
+            font-size: 0.9rem; // Smaller font size to fit smaller screens
+          }
+        }
+      }
+    }
+    

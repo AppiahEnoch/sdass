@@ -1,0 +1,78 @@
+HERE ARE student details, parent as guardian, father and mother details:
+
+
+PROVIDE THE VALUES USING THE TABLES BELOW:
+
+CREATE TABLE `student` (
+  `id` int(11) NOT NULL,
+  `admission_number` varchar(30) DEFAULT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `date_of_birth` date DEFAULT NULL,
+  `student_class` varchar(50) DEFAULT NULL,
+  `ghana_card_number` varchar(100) DEFAULT NULL,
+  `ghana_card_image` varchar(100) DEFAULT NULL,
+  `birth_certificate` varchar(100) DEFAULT NULL,
+  `previous_school_report` varchar(100) DEFAULT NULL,
+  `student_passport_image_input` varchar(100) DEFAULT NULL,
+  `date_of_admission` date DEFAULT NULL,
+  `recdate` timestamp NOT NULL DEFAULT current_timestamp(),
+  `term` varchar(50) DEFAULT NULL,
+  `has_health_problem` varchar(5) DEFAULT NULL,
+  `health_problem_details` text DEFAULT NULL,
+  `has_special_needs` varchar(5) DEFAULT NULL,
+  `special_needs_details` text DEFAULT NULL,
+  `child_nationality` varchar(50) DEFAULT NULL,
+  `student_residential_address` varchar(255) DEFAULT NULL,
+  `gender` varchar(10) DEFAULT NULL,
+  `language_spoken` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+USE THE parent details as guardian:
+CREATE TABLE `parent` (
+  `id` int(11) NOT NULL,
+  `admission_number` varchar(30) DEFAULT NULL,
+  `parent_first_name` varchar(255) NOT NULL,
+  `parent_middle_name` varchar(255) DEFAULT NULL,
+  `parent_last_name` varchar(255) NOT NULL,
+  `parent_passport_picture` varchar(100) DEFAULT NULL,
+  `parent_ghana_card_number` varchar(255) DEFAULT NULL,
+  `parent_ghana_card_image` varchar(100) DEFAULT NULL,
+  `parent_mobile` varchar(15) NOT NULL,
+  `parent_email` varchar(255) DEFAULT NULL,
+  `parent_location` varchar(255) DEFAULT NULL,
+  `parent_house_address` varchar(255) DEFAULT NULL,
+  `parent_occupation` varchar(255) DEFAULT NULL,
+  `parent_proof_of_residence` varchar(100) DEFAULT NULL,
+  `parent_region` varchar(50) DEFAULT NULL,
+  `relationship_with_child` varchar(50) DEFAULT NULL,
+  `recdate` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+CREATE TABLE `father` (
+  `id` int(11) NOT NULL,
+  `admission_number` varchar(30) DEFAULT NULL,
+  `father_first_name` varchar(255) NOT NULL,
+  `father_middle_name` varchar(255) DEFAULT NULL,
+  `father_last_name` varchar(255) NOT NULL,
+  `father_education` varchar(255) DEFAULT NULL,
+  `father_occupation` varchar(255) DEFAULT NULL,
+  `father_mobile` varchar(15) DEFAULT NULL,
+  `father_residential_address` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+CREATE TABLE `mother` (
+  `id` int(11) NOT NULL,
+  `admission_number` varchar(30) DEFAULT NULL,
+  `mother_first_name` varchar(255) NOT NULL,
+  `mother_middle_name` varchar(255) DEFAULT NULL,
+  `mother_last_name` varchar(255) NOT NULL,
+  `mother_education` varchar(255) DEFAULT NULL,
+  `mother_occupation` varchar(255) DEFAULT NULL,
+  `mother_mobile` varchar(15) DEFAULT NULL,
+  `mother_residential_address` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

@@ -1,0 +1,385 @@
+#wrapper9{
+    $mobile-breakpoint: 768px;
+
+
+.custom-form {
+
+  min-width: 100%; // Allows the form to fill the full width on smaller screens
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem auto; // Added a margin to avoid touching the screen edges
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  position: relative;
+
+  .form-label {
+    margin-bottom: 0rem;  // Adjust as needed to make the label closer to the input
+    font-family: sans-serif;
+    font-size: small;
+  }
+
+  // Media query to target tablet to desktop screens
+  @media (min-width: $mobile-breakpoint) {
+    min-width: 45rem; // Only apply this min-width for larger screens
+  }
+
+
+
+  #payee-list {
+    position: absolute;
+ 
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); // Shadow for the list box
+    top: 10;
+    z-index: 10;
+    width: 80%;
+
+    #payee-suggestion {
+        
+        .list-group-item {
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+
+            &:first-child {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            &:last-child {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            &:hover {
+                background-color: rgb(151, 117, 237);
+                color: #fff;
+            }
+        }
+        
+    }
+}
+
+}
+
+
+
+
+  
+  input[type],
+  input[type="file"], button,
+  textarea,
+  select {
+    &:hover, &:focus {
+  
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+
+
+
+
+.aeSubmit-buttons {
+
+  
+    .btn {
+  
+      transition: all 0.3s ease-in-out; // Smooth transitions for hover effects
+
+  
+      // Hover effect
+      &:hover {
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Add a subtle shadow on hover
+      }
+  
+      // Focus effect
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); // Bootstrap's focus shadow
+        outline: none; // Remove browser default outline
+      }
+    }
+  
+    #submitFee {
+
+  
+    }
+  
+    #fee_cancel {
+   background-color: transparent;
+   border: solid 1px blue;
+   color: black;
+  
+      // Hover effect specific to the cancel button
+      &:hover {
+        background-color: rgb(230, 223, 236);
+      }
+    }
+
+
+
+   
+  }
+  
+
+
+
+  .filter-card {
+
+position: absolute;
+width: 25rem;
+top: 10;
+z-index: 10;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa; // light gray background
+    border: 4px solid #06233d; // subtle border
+    border-radius: 8px; // rounded edges
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); // drop shadow
+
+    h6 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #333; // dark gray text
+    }
+
+    .mb-3 {
+        margin-bottom: 1rem !important; // increased margin for more spacing
+
+        label {
+            font-weight: 500; // bold labels
+            margin-bottom: 0.5rem; // reduced space between label and input
+        }
+
+        .input-group {
+            .form-control,
+            select.form-control {
+                border: 1px solid #ced4da; // border color
+                border-radius: 5px; // slightly rounded edges
+            }
+
+            .input-group-text {
+                background-color: #e9ecef; // light gray background for icons
+                border-color: #ced4da; // border color
+                border-radius: 5px; // slightly rounded edges
+
+                i.fas {
+                    color: #495057; // icon color
+                }
+            }
+        }
+
+        button {
+            font-weight: 600; // bold button text
+            border-radius: 5px; // slightly rounded edges
+
+            &:hover {
+                filter: brightness(90%); // slightly darken the button on hover
+            }
+        }
+    }
+}
+
+
+.btn-secondary{
+    background-color: transparent;
+    border: solid 1px blue;
+    color: black;
+    &:hover {
+        background-color: rgb(230, 223, 236);
+        color: black;
+      }
+}
+
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+td:focus {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+i.fa.fa-trash.delete-assessment {
+  float: right;
+  font-size: 18px;
+  color: #9E9E9E;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: #F44336;
+    transform: scale(1.2);
+    box-shadow: 0 3px 6px rgba(244, 67, 54, 0.3);
+  }
+}
+
+
+i#print_all_teacher_assessment_cards.fa.fa-print.fa-2x {
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #3498db;
+    transform: scale(1.2);
+    box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
+  }
+}
+.print_m3{
+  // your regular styles here
+
+  @media print {
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+  
+  }
+}
+
+#student_interest_table_body td:nth-child(1),
+#student_attitude_table_body td:nth-child(1),
+#student_remarks_table_body td:nth-child(1) {
+  width: 20%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+
+#student_interest_table_body td:nth-child(2),
+#student_attitude_table_body td:nth-child(2),
+#student_remarks_table_body td:nth-child(2) {
+  width: 30%;
+}
+
+// Styling for the label
+#lb_save_interest_changes,#lb_save_interest_changes2 {
+  z-index: 100;
+  display: inline-flex;         // Use flex to align items center
+  align-items: center;         // Center the icon and text vertically
+  cursor: pointer;             // Indicates interactivity
+  font-size: 16px;             // Font size for the label text
+  color: #555;                 // Dark grey for a professional look
+  transition: color 0.3s ease; // Smooth transition for hover effects
+
+  &:hover {
+    color: #007BFF;            // Change color on hover for visual feedback
+  }
+
+  // Styling for the icon inside the label
+  #teacher_update_comments_manually, #teacher_update_comments_manually2 {
+    z-index: 100;
+    margin-right: 8px;         // Space between the icon and the label text
+    font-size: 20px;           // Size of the icon
+    color: inherit;            // Inherit color from the label for consistency
+    transition: transform 0.3s ease; // Smooth transition for hover effects
+
+    &:hover {
+      transform: scale(1.1);   // Slightly enlarge the icon on hover
+    }
+
+    &:active {
+      transform: scale(0.95);  // Slight shrink for a button-like effect
+    }
+  }
+}
+
+
+#teacher_search_student_for_terminal_admission_list {
+  position: absolute;
+  top: 10;               // Adjust these values to position the div as needed
+  left: 0;              // Adjust these values to position the div as needed
+  width: 20rem;         // Width of the card
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Adds a subtle shadow for depth
+  z-index: 1000;        // To ensure it appears above other elements
+
+  .list-group {
+    margin: 0;          // Removes margin for a flush appearance
+    overflow: scroll;
+    max-height: 20rem;  
+    border-radius: 20px;
+    border: 1px solid #ddd;
+
+    .list-group-item {
+      padding: 12px 16px;     
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(41, 29, 29); 
+        color: #f2f2f2;
+        cursor: pointer;
+        
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #e5e5e5; 
+      }
+    }
+
+  }
+}
+
+
+
+#class_student_attendance_list th:nth-child(1),
+#class_student_attendance_list td:nth-child(1) {
+  width: 20%;
+}
+
+#class_student_attendance_list th:nth-child(2),
+#class_student_attendance_list td:nth-child(2) {
+  width: 50%;
+}
+
+#class_student_attendance_list th:nth-child(3),
+#class_student_attendance_list td:nth-child(3),
+#class_student_attendance_list th:nth-child(4),
+#class_student_attendance_list td:nth-child(4) {
+  width: 15%;
+}
+
+
+
+a.d-inline-flex {
+  padding: 10px 20px;
+  border-radius: 25px;
+  background-color: #f2f2f2; // Light grey background
+  text-decoration: none; // Remove underline
+  margin-bottom: 1rem;
+  cursor: pointer; 
+  
+  &:hover {
+    background-color: #e6e6e6; // Slightly darker on hover
+    transition: background-color 0.3s ease;
+    cursor: pointer; 
+  }
+
+  small {
+    color: #555; // Dark grey text
+    font-weight: bold;
+  }
+}
+
+.save-icon {
+  font-size: 20px; // Adjust the size to make it look cute
+  color: #ff66b3; // A cute pink color
+  cursor: pointer; // Change the cursor to a pointer on hover
+  
+  &:hover {
+    color: #ff3385; // Darker pink on hover
+    transition: color 0.3s ease;
+    cursor: pointer; // Change the cursor to a pointer on hover
+  }
+}
+

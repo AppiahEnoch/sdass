@@ -1,0 +1,118 @@
+#student_passport_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#student_passport_wrapper img.img-fluid {
+  border-radius: 50%;
+  max-width: 200px;
+  height: auto;
+  margin: auto;
+}
+
+.card-body {
+  background-color: #f7f9fc;
+  border: 1px solid #e0e7ee;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.card-body .list-group {
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card-body .list-group .list-group-item {
+  border: none;
+  padding: 12px 20px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9em;
+  color: #333;
+}
+.card-body .list-group .list-group-item:hover {
+  background-color: #e6eef5;
+}
+.card-body .list-group .list-group-item:not(:last-child) {
+  border-bottom: 1px solid #e0e7ee;
+}
+.card-body .list-group .list-group-item:before {
+  content: attr(data-label);
+  font-weight: bold;
+  margin-right: 10px;
+  color: #555;
+}
+.card-body .list-group .list-group-item span {
+  font-weight: normal;
+  color: #333;
+}
+
+#student_basic_portal_details .list-group-item {
+  font-weight: bold;
+}
+#student_basic_portal_details .list-group-item span {
+  font-weight: normal;
+}
+
+@media (max-width: 576px) {
+  .list-group-item {
+    color: #007bff; /* Label color on small devices */
+  }
+  .list-group-item span {
+    display: block; /* Break onto the next line */
+    color: #28a745; /* Value color on small devices */
+  }
+}
+.download-image-icon {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: auto;
+  cursor: pointer;
+}
+.download-image-icon:hover {
+  opacity: 0.8;
+}
+.download-image-icon:active {
+  opacity: 0.6;
+}
+
+.btn-primary {
+  background-color: #4A5D23;
+}
+.btn-primary:hover {
+  background-color: #03d944;
+}
+.btn-primary:active {
+  background-color: #03a734;
+  color: #fff;
+  outline: none;
+  box-shadow: none;
+}
+.btn-primary:focus {
+  background-color: #03C03C;
+  outline: none;
+  box-shadow: none;
+}
+
+.d-doc {
+  color: #4A5D23;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.edit-icon {
+  cursor: pointer;
+  color: #228B22;
+}
+.edit-icon .small-text {
+  font-size: 0.8rem;
+  color: #4A5D23;
+}
+.edit-icon:hover {
+  opacity: 0.8;
+  color: #0c1104;
+}/*# sourceMappingURL=form.css.map */

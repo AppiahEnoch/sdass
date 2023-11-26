@@ -1,0 +1,96 @@
+#wrapper2 {
+  
+ 
+  
+    form {
+      padding: 2rem;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+      .form-label {
+        font-weight: bold;
+        color: #333;
+      }
+  
+      .form-control,
+      .form-select {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  
+        &:focus {
+          border-color: #8dade1;
+          box-shadow: 0 0 10px rgba(141, 173, 225, 0.5);
+        }
+      }
+  
+      button {
+        border-radius: 10px;
+        font-weight: bold;
+  
+        &.btn-primary {
+          background-color: #007bff;
+          border: none;
+        }
+  
+        &.btn-outline-secondary {
+          color: #007bff;
+          border-color: #007bff;
+          &:hover {
+            background-color: #007bff;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  
+
+
+
+  
+  // Base styling for the cards
+
+#insertedCard{
+    .card {
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    
+        &:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-5px);
+        }
+    
+        // Styles for the delete icon
+        .fas.fa-trash-alt {
+            color: rgba(82, 68, 151, 0.8); // Slightly transparent red
+            font-size: 1.5em;
+            transition: color 0.3s ease-in-out;
+    
+            &:hover {
+                color: rgba(255, 0, 0, 1); // Full red on hover
+            }
+        }
+    }
+    
+    // Specific styles for card2
+    .card2 {
+        border-color: rgba(0, 0, 0, 0.15);
+        background-color: rgba(255, 255, 255, 0.9); // Slightly transparent white
+        max-width: 12rem;
+        max-height: 5rem;
+    }
+    
+    // Styling for the inner elements of card2
+    .usermobile,
+    .usertype {
+        color: #333;
+        margin-bottom: 10px;
+    
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    }

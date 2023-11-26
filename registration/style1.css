@@ -1,0 +1,137 @@
+html, body {
+  background-color: white;
+}
+
+.bg-color {
+  background-color: #541ea5;
+  color: white;
+  background-image: url("../devimage/11.jpg"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire element */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+}
+
+.buttom-border {
+  border-bottom: 0px solid #541ea5; /* This will create a 2-pixel thick, solid, black border at the bottom of the element */
+}
+
+.heading-color {
+  color: #fffdd0;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.link-icon {
+  color: #fffdd0;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+.link-icon:hover {
+  color: yellow;
+  text-decoration: underline;
+}
+
+.logo {
+  width: 12rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dropdown-bg {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-left: 2rem;
+}
+.dropdown-bg ul, .dropdown-bg li, .dropdown-bg a {
+  color: #eee8e8;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  #navbarNavDropdown .nav-item a[href="login/login.php"] {
+    display: none;
+  }
+}
+.hambergerColor1 {
+  background-color: transparent;
+  border: none;
+  color: #f2f2f2;
+}
+.hambergerColor1:focus, .hambergerColor1:active {
+  background-color: #f4f4f5;
+  border: none;
+  color: white;
+}
+.hambergerColor1:hover {
+  border: 2px solid #00ff00;
+  color: #fffdd0;
+  box-shadow: 0 0 10px 3px #00ff00;
+}
+
+.hambergerColor2 {
+  background-color: #454c86;
+  border: none;
+  color: wheat;
+}
+.hambergerColor2:focus, .hambergerColor2:active {
+  border: none;
+  color: white;
+}
+.hambergerColor2:hover {
+  background-color: #c5c5cf;
+  border: none;
+  color: white;
+}
+
+.nav-link {
+  color: #eee8e8;
+  text-decoration: none;
+  padding-right: 1rem;
+}
+.nav-link:hover {
+  color: #fffdd0;
+  text-decoration: none;
+}
+.nav-link:focus {
+  color: #eee8e8;
+  outline: none;
+}
+
+#login2 {
+  color: #fffdd0;
+  font-weight: bolder;
+}
+
+#userProfilePic {
+  width: 2rem;
+  border-radius: 50%;
+  border-color: #f2f2f2;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.headingLabel {
+  color: #fffdd0;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-size: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+.headingLabel:hover {
+  text-decoration: none;
+}
+
+.userProfile:hover {
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style1.css.map */

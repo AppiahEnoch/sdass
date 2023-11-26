@@ -1,0 +1,36 @@
+html, body {
+  background-color: black;
+  background-color: white;
+}
+
+.bg-color {
+  background-color: white;
+  color: black;
+  background-image: url("devimage/11.jpg"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire element */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+}
+
+.buttom-border {
+  border-bottom: 0px solid white; /* This will create a 2-pixel thick, solid, black border at the bottom of the element */
+}
+
+.heading-color {
+  color: #fffdd0;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.logo {
+  width: 12rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#searchIcon {
+  color: #DADD98;
+}/*# sourceMappingURL=style1.css.map */

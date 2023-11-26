@@ -1,0 +1,40 @@
+
+
+@media (max-width: 576px) {
+  .custom-form {
+    
+ top: 10rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+
+     
+  }
+}
+
+
+
+// make transparent inputs
+
+
+
+
+
+
+#mobileError {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  
+  &:before {
+    content: '\f071'; // Font Awesome Exclamation Triangle
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 8px;
+  }
+}
+
+

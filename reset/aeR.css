@@ -1,0 +1,72 @@
+.custom-form {
+  z-index: 99 !important;
+  background: #F6F6F6;
+  position: absolute;
+  top: 4rem;
+  right: 40%;
+  max-width: 20rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+}
+.custom-form .fas, .custom-form .fa {
+  color: #8941b6;
+  cursor: pointer;
+}
+.custom-form .fas:hover, .custom-form .fa:hover {
+  color: #301892;
+}
+
+@media (max-width: 576px) {
+  .custom-form {
+    top: 10rem;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+input[type]:hover, input[type]:focus,
+input[type=file]:hover,
+input[type=file]:focus,
+textarea:hover,
+textarea:focus,
+select:hover,
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.reset-text {
+  font-weight: bold;
+  color: #766282;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.psw {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #9d2ae5;
+  font-weight: bold;
+}
+
+#small_logo {
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: solid 1px blue;
+  color: black;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(230, 223, 236);
+  color: black;
+}/*# sourceMappingURL=aeR.css.map */

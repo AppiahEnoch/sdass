@@ -1,0 +1,26 @@
+.carousel {
+    .carousel-control-prev, .carousel-control-next {
+      // Adjust the position of the controls here
+      width: auto;
+      height: auto;
+      padding: 10px;
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      // Adjust the size of the controls here
+      width: 2rem;
+      height: 2rem;
+      background-color: black;
+      border-radius: 50%;
+      margin: 5rem;
+    }
+  }
+
+  .carousel-item {
+
+    margin-top: 0;
+  img {
+    height: 32rem;  // Set the height you want
+    width: 100%;  // This will make the image take the full width of its container
+    object-fit: cover;  // This will make the image cover the full width and height of its container without stretching
+  }
+}

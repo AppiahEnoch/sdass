@@ -1,0 +1,208 @@
+#wrapper4{
+    $mobile-breakpoint: 768px;
+
+
+.custom-form {
+  max-width: 50rem;
+  min-width: 100%; // Allows the form to fill the full width on smaller screens
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem auto; // Added a margin to avoid touching the screen edges
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  position: relative;
+
+  .form-label {
+    margin-bottom: 0rem;  // Adjust as needed to make the label closer to the input
+    font-family: sans-serif;
+    font-size: small;
+  }
+
+  // Media query to target tablet to desktop screens
+  @media (min-width: $mobile-breakpoint) {
+    min-width: 45rem; // Only apply this min-width for larger screens
+  }
+
+
+
+  #payee-list {
+    position: absolute;
+ 
+
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); // Shadow for the list box
+    top: 10;
+    z-index: 10;
+    width: 80%;
+
+    #payee-suggestion {
+        
+        .list-group-item {
+            border: none;
+            border-radius: 0;
+            cursor: pointer;
+
+            &:first-child {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+
+            &:last-child {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            &:hover {
+                background-color: rgb(151, 117, 237);
+                color: #fff;
+            }
+        }
+        
+    }
+}
+
+}
+
+
+
+
+  
+  input[type],
+  input[type="file"], button,
+  textarea,
+  select {
+    &:hover, &:focus {
+  
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+
+
+
+
+.aeSubmit-buttons {
+
+  
+    .btn {
+  
+      transition: all 0.3s ease-in-out; // Smooth transitions for hover effects
+
+  
+      // Hover effect
+      &:hover {
+
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Add a subtle shadow on hover
+      }
+  
+      // Focus effect
+      &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); // Bootstrap's focus shadow
+        outline: none; // Remove browser default outline
+      }
+    }
+  
+    #submitFee {
+
+  
+    }
+  
+    #fee_cancel {
+   background-color: transparent;
+   border: solid 1px blue;
+   color: black;
+  
+      // Hover effect specific to the cancel button
+      &:hover {
+        background-color: rgb(230, 223, 236);
+      }
+    }
+
+
+
+   
+  }
+  
+
+
+
+  .filter-card {
+
+position: absolute;
+width: 25rem;
+top: 10;
+z-index: 10;
+    padding: 1rem 2rem;
+    background-color: #f8f9fa; // light gray background
+    border: 4px solid #06233d; // subtle border
+    border-radius: 8px; // rounded edges
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); // drop shadow
+
+    h6 {
+        font-weight: 600;
+        margin-bottom: 1rem;
+        color: #333; // dark gray text
+    }
+
+    .mb-3 {
+        margin-bottom: 1rem !important; // increased margin for more spacing
+
+        label {
+            font-weight: 500; // bold labels
+            margin-bottom: 0.5rem; // reduced space between label and input
+        }
+
+        .input-group {
+            .form-control,
+            select.form-control {
+                border: 1px solid #ced4da; // border color
+                border-radius: 5px; // slightly rounded edges
+            }
+
+            .input-group-text {
+                background-color: #e9ecef; // light gray background for icons
+                border-color: #ced4da; // border color
+                border-radius: 5px; // slightly rounded edges
+
+                i.fas {
+                    color: #495057; // icon color
+                }
+            }
+        }
+
+        button {
+            font-weight: 600; // bold button text
+            border-radius: 5px; // slightly rounded edges
+
+            &:hover {
+                filter: brightness(90%); // slightly darken the button on hover
+            }
+        }
+    }
+}
+
+
+.btn-secondary{
+    background-color: transparent;
+    border: solid 1px blue;
+    color: black;
+    &:hover {
+        background-color: rgb(230, 223, 236);
+        color: black;
+      }
+}
+
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+td:focus {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+

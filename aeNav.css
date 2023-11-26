@@ -1,0 +1,63 @@
+#home-nav .navbar {
+  background-color: transparent;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+#home-nav .navbar .navbar-brand .logo {
+  height: 50px;
+  width: auto;
+}
+#home-nav .navbar .navbar-toggler {
+  background-color: wheat;
+  border: none;
+}
+#home-nav .navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+#home-nav .navbar .navbar-nav .nav-item .nav-link {
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+#home-nav .navbar .navbar-nav .nav-item .nav-link:hover, #home-nav .navbar .navbar-nav .nav-item .nav-link:focus {
+  color: #0056b3;
+}
+#home-nav .navbar .navbar-nav .nav-item .nav-link i {
+  margin-right: 0.5rem;
+}
+#home-nav .navbar .dropdown-bg {
+  background-color: #f8f9fa;
+}
+#home-nav .fas,
+#home-nav .fa {
+  color: #f2f2f2;
+  cursor: pointer;
+}
+#home-nav .fas:hover,
+#home-nav .fa:hover {
+  color: white;
+}
+#home-nav .dropdown-bg {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-left: 2rem;
+}
+#home-nav .dropdown-bg ul, #home-nav .dropdown-bg li, #home-nav .dropdown-bg a {
+  color: #f2f2f2;
+  background-color: transparent;
+}
+#home-nav .ae-large-only {
+  color: #f2f2f2;
+}
+#home-nav a:hover {
+  color: #f2f2f2;
+  background-color: transparent;
+  text-decoration: underline;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#home-nav .navbar-toggler {
+  border-color: none !important;
+}
+#home-nav .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}/*# sourceMappingURL=aeNav.css.map */

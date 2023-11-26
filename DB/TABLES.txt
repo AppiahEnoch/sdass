@@ -1,0 +1,82 @@
+CREATE TABLE temp_user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userMobile VARCHAR(20) NOT NULL UNIQUE,
+    userType ENUM('Teaching Staff', 'Non-teaching Staff', 'Admin', 'Super Admin') NOT NULL,
+    recdate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+CREATE TABLE `registration` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mobile` varchar(15) NOT NULL UNIQUE,
+  `email` text DEFAULT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `middlename` varchar(50) DEFAULT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `user_type` varchar(50) DEFAULT NULL,
+  `userClass` varchar(30) NOT NULL,
+  `username` varchar(50) NOT NULL UNIQUE,
+  `password` text NOT NULL,
+  `profile_pic` text DEFAULT NULL,
+  `recdate` timestamp NOT NULL DEFAULT current_timestamp(),
+  `staffid` VARCHAR(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+
+
+
+
+
+-- Creating the table again with the new specifications
+CREATE TABLE `token` (
+  `id` INT(11) AUTO_INCREMENT PRIMARY KEY,
+  `userid` INT(11) NOT NULL,
+  `email` VARCHAR(255) NOT NULL UNIQUE,
+  `token` TEXT NOT NULL,
+  `recdate` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+
+CREATE TABLE `app` (
+  `app_name` varchar(50) NOT NULL,
+  `location` text DEFAULT NULL,
+  `email` text DEFAULT NULL,
+  `address` text DEFAULT NULL,
+  `website` varchar(255) DEFAULT NULL,
+  `mobile` varchar(15) DEFAULT NULL
+);
+
+
+CREATE TABLE `student_payment` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `admission_number` VARCHAR(30),
+  `payment_type` ENUM('school fees', 'other') NOT NULL,
+  `description` TEXT DEFAULT NULL,
+  `amount` DECIMAL(10,2) NOT NULL,
+  `recdate` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (`admission_number`) REFERENCES `student`(`admission_number`) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+CREATE TABLE `school_class` (
+  `id` INT AUTO_INCREMENT PRIMARY KEY,
+  `class_name` VARCHAR(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `school_class` (`class_name`) VALUES 
+('Nursery 1'),
+('Nursery 2'),
+('Kindergarten 1'),
+('Kindergarten 2'),
+('Class 1'),
+('Class 2'),
+('Class 3'),
+('Class 4'),
+('Class 5'),
+('Class 6'),
+('JHS 1'),
+('JHS 2'),
+('JHS 3');
+

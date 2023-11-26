@@ -1,0 +1,37 @@
+.student-header {
+    text-align: center; // Centers the text
+    font-size: 1.25rem; // Defines a moderate size for h5 heading
+    color: #343a40; // A strong, dark color for the text
+    margin-top: 1rem; // Adds space above the heading
+    margin-bottom: 1rem; // Adds space below the heading
+  
+    #student_full_name {
+      font-weight: bold; // Emphasizes the student's name
+      color: #4FFFB0;// A standout color for the student's name
+    }
+  }
+  
+  #login2{
+ 
+    color: #4FFFB0;
+    font-weight: bold;
+  }
+
+  @media (max-width: 768px) {
+    .center-on-mobile {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+
+  .navbar-toggler {
+    border-color:none !important; // Change the border color to green
+
+  .navbar-toggler-icon {
+
+  
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'rgba(255, 255, 255, 1)\' stroke-width=\'2\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');
+    // You can adjust the stroke attribute in the SVG data URL to change the color
+  }
+}

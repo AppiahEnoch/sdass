@@ -1,0 +1,58 @@
+DELIMITER //
+CREATE PROCEDURE InsertIntoAdmissionNumber()
+BEGIN
+  DECLARE done INT DEFAULT 0;
+  DECLARE current_year VARCHAR(10);
+  DECLARE v_id INT;
+  DECLARE cur CURSOR FOR SELECT id FROM school_class;
+  DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = 1;
+
+  SET current_year = YEAR(NOW());
+
+  OPEN cur;
+
+  read_loop: LOOP
+    FETCH cur INTO v_id;
+    
+    IF done = 1 THEN
+      LEAVE read_loop;
+    END IF;
+    
+    IF NOT EXISTS (SELECT 1 FROM admission_number WHERE available_class = v_id) THEN
+      INSERT INTO admission_number (available_class, class_count, year, recdate) 
+      VALUES (v_id, 0, current_year, NOW());
+    END IF;
+
+  END LOOP;
+
+  CLOSE cur;
+
+END;
+//
+DELIMITER ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DELIMITER $$
+
+CREATE PROCEDURE update_current_term(IN new_id INT)
+BEGIN
+    UPDATE `term` SET `current_term` = 0 WHERE `id` != new_id;
+    UPDATE `term` SET `current_term` = 1 WHERE `id` = new_id;
+END $$
+
+DELIMITER ;
+
+
