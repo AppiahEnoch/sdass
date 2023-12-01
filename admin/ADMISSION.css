@@ -252,4 +252,32 @@ select:focus {
 }
 #ae_image_download img:hover {
   cursor: pointer;
+}
+
+#ae_not_enrolled_download {
+  float: right;
+}
+#ae_not_enrolled_download img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#ae_not_enrolled_download:hover {
+  cursor: pointer;
+}
+
+#ae_enrolled_download {
+  float: left;
+}
+#ae_enrolled_download img {
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#ae_enrolled_download:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=ADMISSION.css.map */

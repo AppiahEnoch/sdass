@@ -32,7 +32,7 @@
                     </div>
                 </div>
 
-                <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
+                <button id="submit" type="submit" class="btn btn-primary w-100 mb-2">Login</button>
                 <a onclick="showWrapper4(['wrapper3'], 'wrapper', 20);" href="#" class="text-decoration-none text-primary">Forgot password?</a>
             </form>
         </div>

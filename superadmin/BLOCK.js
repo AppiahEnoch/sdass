@@ -160,3 +160,54 @@ function fetchBlockStatus(staffId, userType,fullName, profilePic, mobile, email)
 
 // Example usage
 
+function deleteUser() {
+    $(".fa-trash").click(function() {
+      var userId = $("#userId").text();
+      showToastY(
+        "aeToastY", 
+        "Confirm Delete", 
+        "Are you sure you want to delete this user?", 
+        "20", 
+        function() {
+          $.ajax({
+            type: "post",
+            cache: false,
+            url: "BLOCK_DELETE_USER.php",
+            data: { userId: userId },
+            dataType: "text",
+            success: function (data, status) {
+                console.log(data);
+
+                if(data=="1"){
+                    showToastP(
+                        "aeToastP", 
+                        " USER DELETED SUCCESSFULLY", 
+                        "RETURN", 
+                        "30",
+                        function() {
+
+                            // REFRESH PAGE
+                            location.reload();
+                     
+                        }
+                      );
+                }
+
+      
+            },
+            error: function (xhr, status, error) {
+              console.error(error);
+            },
+          });
+        }, 
+        function() {
+          showToast("aeToastE", "Cancelled", "User deletion cancelled", "20");
+        }
+      );
+    });
+  }
+  
+  $(document).ready(function() {
+    deleteUser();
+  });
+  

@@ -8,6 +8,8 @@
           <label for="location" class="form-label">Guardian Location</label>
           <input required type="text" class="form-control" id="location" placeholder="Guardian location">
         </div>
+        
+
 
         <!-- Input for Email -->
         <div class="mb-3">
@@ -29,8 +31,8 @@
 
         <!-- Input for Digital Address -->
         <div class="mb-3">
-          <label for="digitaladdress" class="form-label">Digital Address</label>
-          <input type="text" class="form-control" id="digitaladdress" placeholder="Digital address">
+          <label for="digitaladdress" class="form-label">Digital Address/ Residential Address</label>
+          <input type="text" class="form-control" id="digitaladdress" placeholder="eg. B12 Flat 2 West Hills Residential Area">
         </div>
 
         <!-- Buttons -->

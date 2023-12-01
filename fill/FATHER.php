@@ -27,6 +27,8 @@
           <input required type="text" class="form-control" id="father4" placeholder="Father's mobile">
         </div>
 
+  
+
         <!-- Buttons -->
         <div class="mb-3 justify-content-center align-items-center">
           <div class="row">

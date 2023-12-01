@@ -72,7 +72,8 @@ $(document).ready(function() {
     // Reset button functionality, if needed
     $('#guardian1_back').on('click', function() {
 
-        window.location.href = "../index.php";
+       // window.location.href = "../index.php";
+       showWrapper4(['wrapper10'], 'wrapper', 100);
 
      
        
@@ -127,7 +128,7 @@ function submitGuardianInfo2() {
               "CONTINUE TO FILL STUDENT INFORMATION", 
               "30",
               function() {
-                showWrapper4(['wrapper3'], 'wrapper', 100);
+                showWrapper4(['wrapper11'], 'wrapper', 100);
               }
             );
 
@@ -151,3 +152,65 @@ function submitGuardianInfo2() {
   });
   
 
+
+  $(document).ready(function() {
+    $('#guardian_occupation_select').change(function() {
+      var selectedValue = $(this).val();
+      if (selectedValue === 'other') {
+        $('#guardian_occupation_other').addClass('d-block').removeClass('d-none').attr('required', true);
+      } else {
+        $('#guardian_occupation_other').addClass('d-none').removeClass('d-block').removeAttr('required');
+      }
+    });
+  });
+  
+
+  function updateGuardianOccupation() {
+    $("#guardian_occupation_form").submit(function (e) {
+      e.preventDefault();
+      var occupationSelected = $("#guardian_occupation_select").val();
+      if (aeEmpty(occupationSelected)) {
+        showToast("aeToastE", "Select Occupation?", "Please select an occupation.", "20");
+        return;
+      }
+
+      var formData = $(this).serialize();
+  
+      $.ajax({
+        type: "post",
+        url: "GUARDIAN3_INSERT.php", // Replace with the actual path to your PHP file
+        data: formData,
+        dataType: "json",
+        success: function (response) {
+          if (response.status === 'success') {
+            showToastP(
+              "aeToastP", 
+              " CONTINUE... 30% DONE", 
+              "CONTINUE TO FILL STUDENT INFORMATION", 
+              "30",
+              function() {
+                showWrapper4(['wrapper3'], 'wrapper', 100);
+              }
+            );
+
+          } else {
+            showToast("aeToastE", "Error", response.message, "20");
+          }
+        },
+        error: function (xhr, status, error) {
+          showToast("aeToastE", "Error", "An error occurred: " + error, "20");
+        },
+      });
+    });
+  }
+  
+  
+  $(document).ready(function() {
+    updateGuardianOccupation();
+
+    
+    $('#guardian_occupation_back').on('click', function() {
+      showWrapper4(['wrapper2'], 'wrapper', 100);
+  });
+  });
+  

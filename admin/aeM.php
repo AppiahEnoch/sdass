@@ -35,6 +35,10 @@
     <label class="form-check-label" for="admission_number">BECE Index Number</label>
   </div>
   <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="code" id="code">
+    <label class="form-check-label" for="code">Enrollment Code</label>
+  </div>
+  <div class="form-check">
     <input class="form-check-input" type="checkbox" value="first_name" id="first_name">
     <label class="form-check-label" for="first_name">First Name</label>
   </div>

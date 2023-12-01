@@ -1,4 +1,4 @@
-<div id="wrapper5" class="container-fluid search-container mt-2 d-none">
+<div id="wrapper5" class="container-fluid search-container mt-2 d-none1">
   <div class="row justify-content-center align-items-center mb-3">
     <div class="col-auto">
       <div class="card">
@@ -46,8 +46,12 @@
         <div class="form-check form-switch">
                <input class="form-check-input" type="checkbox" role="switch" id="blockUserSwitch">
                <label class="form-check-label" for="blockUserSwitch">Block User</label>
-             </div>
+               <i class="fa fa-trash float-right ms-5" aria-hidden="true"> <span class="ae-icon-text"> Delete User</span></i>
+             
+              </div>
            </div>
+
+       
      <div class="row justify-content-center">
        <div class="col-12">
          <div class="card text-center">

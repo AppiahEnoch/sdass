@@ -414,7 +414,7 @@ function isFileImage2(fileId) {
       );
       document.getElementById(fileId).value = "";
       return false;
-    } else if (size > 1) {
+    } else if (size > 100) {
       // Using the hard-coded toastID "aeToastE"
       showToast(
         "aeToastE",

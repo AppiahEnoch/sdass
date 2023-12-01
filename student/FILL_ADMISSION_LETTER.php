@@ -33,7 +33,19 @@ if ($row = $result->fetch_assoc()) {
     $admission = strtoupper($row['sdass_admission_number']);
 
     // Replace placeholders with actual data
+
+    // extract current year
+    $currentYear = date("Y");
+
+
+    // extract this academic year as 2022/2023  or 2023/2024 depending on the current year
+    $academicYear = $currentYear . "/" . ($currentYear + 1);
+
+
+
     $templateProcessor->setValue('program', $program);
+    $templateProcessor->setValue('current_year', $currentYear);
+    $templateProcessor->setValue('academic_year', $academicYear);
     $templateProcessor->setValue('status', $status);
     $templateProcessor->setValue('admission', $admission);
     $templateProcessor->setValue('recdate', $recdate);

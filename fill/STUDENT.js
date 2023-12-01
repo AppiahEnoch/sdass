@@ -63,8 +63,8 @@ function submitStudentInfo1() {
 if(global_fetch===false) {
 
   if (!isFileImage2("passport")) {
-    showToast("aeToastE", "Error", "Invalid passport picture format. ONLY JPG OR PNG ARE ALLOWED. SIZE MUST BE LESS THAN 1MB", "20");
-    return;
+    // showToast("aeToastE", "Error", "Invalid passport picture format. ONLY JPG OR PNG ARE ALLOWED. SIZE MUST BE LESS THAN 1MB", "20");
+    // return;
   }
 
   
@@ -136,13 +136,14 @@ $(document).ready(function() {
 
 
   $('#student1_back').on('click', function() {
-    showWrapper4(['wrapper2'], 'wrapper', 100);
+    showWrapper4(['wrapper11'], 'wrapper', 100);
     //alert('back');
 });
   $('#student2_back').on('click', function() {
     showWrapper4(['wrapper3'], 'wrapper', 100);
    
 });
+
   $('#student3_back').on('click', function() {
     showWrapper4(['wrapper4'], 'wrapper', 100);
 });

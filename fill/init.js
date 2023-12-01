@@ -86,6 +86,17 @@ function fillParentForm2WithData() {
     $('#postaladdress').val(parentDetails.parent_house_address);
     $('#digitaladdress').val(parentDetails.parent_digital_address);
     $('#title_guardian_title_select').val(parentDetails.title);
+
+    occupation_option   = parentDetails.parent_occupation;
+    if(aeEmpty(occupation_option)){
+    }
+    else{
+        
+    occupation_option   = parentDetails.parent_occupation.toLowerCase();
+
+    }
+
+    $('#guardian_occupation_select').val(occupation_option);
     //alert(parentDetails.title);
 
 }
@@ -147,6 +158,17 @@ function fillFathersDetailFormWithData() {
     $('#father2').val(fatherDetails.father_middle_name);
     $('#father3').val(fatherDetails.father_last_name);
     $('#father4').val(fatherDetails.father_mobile);
+
+    var occupation_option=fatherDetails.father_occupation;
+    if(aeEmpty(occupation_option)){
+    }
+    else{
+        var occupation_option=fatherDetails.father_occupation.toLowerCase();
+    }
+
+    $('#father_occupation_select').val(occupation_option);
+    $('#father_email').val(fatherDetails.father_email);
+
 }
 
 

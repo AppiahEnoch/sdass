@@ -198,4 +198,25 @@ input[type=date]:not(:focus) {
   font-style: italic;
   color: #dc3545;
   font-size: 0.9rem;
+}
+
+.e_select_option {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  box-shadow: none;
+  color: rgb(195, 175, 175);
+}
+.e_select_option:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.e_select_option option {
+  padding: 0.5rem;
+  background-color: #fff;
+  color: #495057;
+}
+.e_select_option option:hover, .e_select_option option:focus {
+  background-color: #e8f0fe;
 }/*# sourceMappingURL=style1.css.map */

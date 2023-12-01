@@ -210,6 +210,9 @@ $password = $_POST['password'];
 // TO UPPER CASE
 $username = strtoupper($username);
 $password = strtoupper($password);
+if (strlen($password) < 12) {
+    $password = str_pad($password, 12, '0', STR_PAD_LEFT);
+}
 
 $sql4 = "SELECT * FROM student WHERE admission_number=?";
 $stmt4 = $conn->prepare($sql4);

@@ -6,9 +6,6 @@ include "../config/settings.php";
 include "../config/AE.php";
 use AE\AE;
 
-
-
-
 $student_fullname = $_SESSION['full_name'] ?? '';
 
 // Split the full name into an array
@@ -31,8 +28,6 @@ if ($partsCount > 2) {
     $lastname = $nameParts[1];
 } 
 
-
-
 $aggregate = $_SESSION['aggregate'] ?? '';
 
 $programme = $_SESSION['programme'] ?? '';
@@ -51,10 +46,58 @@ $denomination = $conn->real_escape_string($_POST['denomination'] ?? '');
 
 // Update student detail in the database
 $sqlUpdateStudentDetail = "UPDATE student 
-                           SET first_name = ?, middle_name = ?, last_name = ?, date_of_birth = ?, 
-                               student_residential_address = ?, home_town = ?, religion = ?, 
-                               denomination = ?, aggregate1 = ?, programme = ?, boarding_status = ?
-                           WHERE admission_number = ?";
+                           SET ";
+$bindParams = [];
+if (!empty($firstname)) {
+    $sqlUpdateStudentDetail .= "first_name = ?, ";
+    $bindParams[] = $firstname;
+}
+if (!empty($middleName)) {
+    $sqlUpdateStudentDetail .= "middle_name = ?, ";
+    $bindParams[] = $middleName;
+}
+if (!empty($lastname)) {
+    $sqlUpdateStudentDetail .= "last_name = ?, ";
+    $bindParams[] = $lastname;
+}
+if (!empty($dob)) {
+    $sqlUpdateStudentDetail .= "date_of_birth = ?, ";
+    $bindParams[] = $dob;
+}
+if (!empty($placeOfBirth)) {
+    $sqlUpdateStudentDetail .= "student_residential_address = ?, ";
+    $bindParams[] = $placeOfBirth;
+}
+if (!empty($hometown)) {
+    $sqlUpdateStudentDetail .= "home_town = ?, ";
+    $bindParams[] = $hometown;
+}
+if (!empty($religion)) {
+    $sqlUpdateStudentDetail .= "religion = ?, ";
+    $bindParams[] = $religion;
+}
+if (!empty($denomination)) {
+    $sqlUpdateStudentDetail .= "denomination = ?, ";
+    $bindParams[] = $denomination;
+}
+if (!empty($aggregate)) {
+    $sqlUpdateStudentDetail .= "aggregate1 = ?, ";
+    $bindParams[] = $aggregate;
+}
+if (!empty($programme)) {
+    $sqlUpdateStudentDetail .= "programme = ?, ";
+    $bindParams[] = $programme;
+}
+if (!empty($status)) {
+    $sqlUpdateStudentDetail .= "boarding_status = ?, ";
+    $bindParams[] = $status;
+}
+
+$sqlUpdateStudentDetail = rtrim($sqlUpdateStudentDetail, ', '); // Remove the trailing comma and space
+
+$sqlUpdateStudentDetail .= " WHERE admission_number = ?";
+$bindParams[] = $admissionNumber;
+
 $stmtUpdateStudentDetail = $conn->prepare($sqlUpdateStudentDetail);
 
 if ($stmtUpdateStudentDetail === false) {
@@ -63,7 +106,7 @@ if ($stmtUpdateStudentDetail === false) {
     exit;
 }
 
-$stmtUpdateStudentDetail->bind_param("ssssssssssss", $firstname, $middleName, $lastname, $dob, $placeOfBirth, $hometown, $religion, $denomination, $aggregate, $programme, $status, $admissionNumber);
+$stmtUpdateStudentDetail->bind_param(str_repeat('s', count($bindParams)), ...$bindParams);
 
 if ($stmtUpdateStudentDetail->execute()) {
     echo json_encode(['success' => true, 'message' => 'Student details updated successfully']);

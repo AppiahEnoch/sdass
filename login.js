@@ -20,6 +20,7 @@ $(document).ready(function() {
             
 
               console.log(response);
+             // return;
               aeLoading();  // Assuming this function shows a loading indicator
 
              // alert(response);

@@ -1,4 +1,4 @@
-<div id="wrapper1" class="container g1 justify-content-center align-items-center">
+<div id="wrapper1" class="container g1 justify-content-center align-items-center d-none">
 
   <div class="row justify-content-center align-items-center mt-0">
     <div class="col-12 col-sm-10 col-md-10 col-lg-10 mt-0">

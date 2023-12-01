@@ -83,13 +83,22 @@ $admissionNumbers = array_column($_SESSION['admission_record'], 'admission_numbe
 // Create placeholders for the IN clause
 $placeholders = implode(',', array_fill(0, count($admissionNumbers), '?'));
 
+
+
+// CREATE TABLE enrollment_code (
+//     index_number VARCHAR(50) NOT NULL,
+//     code VARCHAR(50) NOT NULL,
+//     recdate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+//   );
+  
 // SQL Query
-$sql = "SELECT s.*, f.*, m.*, p.*
-        FROM student s
-        LEFT JOIN father f ON s.admission_number = f.admission_number
-        LEFT JOIN mother m ON s.admission_number = m.admission_number
-        LEFT JOIN parent p ON s.admission_number = p.admission_number
-        WHERE s.admission_number IN ($placeholders)";
+$sql = "SELECT s.*, f.*, m.*, p.*, e.code
+    FROM student s
+    LEFT JOIN father f ON s.admission_number = f.admission_number
+    LEFT JOIN mother m ON s.admission_number = m.admission_number
+    LEFT JOIN parent p ON s.admission_number = p.admission_number
+    LEFT JOIN enrollment_code e ON s.admission_number = e.index_number
+    WHERE s.admission_number IN ($placeholders)";
 
 $stmt = $conn->prepare($sql);
 

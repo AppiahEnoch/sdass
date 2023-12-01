@@ -17,6 +17,7 @@
         "phpoffice/phpspreadsheet": "^1.29",
         "setasign/fpdf": "^1.8",
         "phpoffice/phpword": "^1.1",
-        "dompdf/dompdf": "^2.0"
+        "dompdf/dompdf": "^2.0",
+        "twbs/bootstrap-icons": "^1.11"
     }
 }

@@ -57,6 +57,19 @@
       </div>
     </div>
 
+    <div  onclick="showWrapper4(['wrapper24'], 'wrapper', 100);"  class="col-lg-4 col-md-6 activity-card">
+      <div class="card">
+       <div class="row justify-content center align-items-center gap-2">
+        <div class="col justify-content center align-items center d-flex">
+            <img class="card-img-top" src="../icon/41.png"  alt="...">
+        </div>
+       </div>
+        <div class="card-body">
+            <p id="admin_message" class="card-text">Update Enrolled List</p>
+        </div>
+      </div>
+    </div>
+
 
 
 

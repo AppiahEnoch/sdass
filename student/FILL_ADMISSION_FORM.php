@@ -44,7 +44,31 @@ if ($row = $result->fetch_assoc()) {
         $age = "#";
     }
 
-    // Replace placeholders with actual data
+    // create variable student passport 
+   // create variable student passport 
+$passport = $row['student_passport_image_input'] ?? '../devimage/placeholder.png';
+
+if(\AE\AE::isEmpty($passport)){
+    $passport = '../devimage/placeholder.png';
+}
+
+if ($passport) {
+
+    $templateProcessor->setImageValue('student_image', array(
+        'path' => $passport,
+        'width' => 100,
+        'height' => 100,
+        'ratio' => false,
+        'alignment' => \PhpOffice\PhpWord\SimpleType\Jc::END // Set alignment to END for extreme right
+    ));
+} else {
+    $templateProcessor->setValue('student_image', '');
+}
+
+
+
+
+
     $fullName = strtoupper($row['first_name'] . ' ' . $row['middle_name'] . ' ' . $row['last_name']);
     $templateProcessor->setValue('studfname', strtoupper($fullName));
     $templateProcessor->setValue('admission',  strtoupper($row['sdass_admission_number']));
@@ -66,6 +90,9 @@ if ($row = $result->fetch_assoc()) {
     $fname = $row['father_first_name'] . ' ' . $row['father_middle_name'] . ' ' . $row['father_last_name'];
     $mname = $row['mother_first_name'] . ' ' . $row['mother_middle_name'] . ' ' . $row['mother_last_name'];
     $gname = $row['parent_first_name'] . ' ' . $row['parent_middle_name'] . ' ' . $row['parent_last_name'];
+
+
+
 
     $templateProcessor->setValue('fname', strtoupper($fname));
     $templateProcessor->setValue('fcontact', strtoupper($row['father_mobile']));

@@ -31,10 +31,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['selection'])) {
             deleteAll("student_payment");
            
             deleteAll("student_class");
+           
             deleteAll("admission_number");
             deleteAll("assessment");
             deleteAll("student");
             deleteAll("bill_item");
+            deleteAll("enrollment_code");
             procedure("DeleteInvalidAdmissionNumbers");
 
 
